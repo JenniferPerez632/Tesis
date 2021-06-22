@@ -1,2 +1,2 @@
 # Tesis
-Aquí se subirán todos los documentos necesarios para elaborar yy validar mi tesis
+Aquí se subirán todos los documentos necesarios para elaborar y validar mi tesis
