@@ -1,0 +1,8860 @@
+ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO 
+
+FACULTAD DE INFORMÁTICA Y ELECTRÓNICA 
+
+ESCUELA DE INGENIERÍA EN SISTEMAS 
+
+ 
+
+ 
+
+.ANÁLISIS COMPARATIVO ENTRE HTML5 Y PRIME FACES 
+PARA EL DESARROLLO DE APLICACIONES WEB. CASO 
+APLICATIVO PATRONATO DE ACCIÓN SOCIAL “NUESTRA 
+SEÑORA DEL MONTE””. 
+
+ 
+
+ 
+
+Tesis de Grado presentado para optar al grado académico de: 
+
+INGENIERO EN SISTEMAS INFORMÁTICOS 
+
+ 
+
+ 
+
+AUTOR: CLAUDIO FERNANDO PADRÓN PADRÓN 
+
+ DAVID RICARDO LASLUISA ARAUZ 
+
+ TUTOR: DR. JULIO SANTILLÁN 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Riobamba-Ecuador 
+
+2016 
+
+ 
+
+
+ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO 
+
+FACULTAD DE INFORMÁTICA Y ELECTRÓNICA 
+
+ESCUELA DE INGENIERÍA EN SISTEMAS 
+
+ 
+
+El tribunal de Tesis certifica que el: .ANÁLISIS COMPARATIVO ENTRE HTML5 Y PRIME 
+FACES PARA EL DESARROLLO DE APLICACIONES WEB. CASO APLICATIVO 
+PATRONATO DE ACCIÓN SOCIAL .NUESTRA SEÑORA DEL MONTE... De 
+responsabilidad de los señores: Claudio Fernando Padrón Padrón, David Ricardo Lasluisa 
+Arauz, ha sido minuciosamente revisado por los Miembros del Tribunal de Tesis, quedando 
+autorizada su presentación. 
+
+ 
+
+FIRMA FECHA 
+
+ 
+
+Dr. Miguel Tasambay Phd. 
+
+DECANO DE LA FIE .............................. ............................ 
+
+ 
+
+ 
+
+Dr. Julio Santillán 
+
+DIRECTOR DE EIS .............................. ............................ 
+
+ 
+
+ 
+
+Dr. Julio Santillán 
+
+DIRECTOR DE TESIS .............................. ............................ 
+
+ 
+
+ 
+
+ 
+
+Ing. Fernando Proaño 
+
+MIEMBRO DEL TRIBUNAL .............................. ............................ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+©2016, Padrón Padrón Claudio Fernando, Lasluisa Arauz David Ricardo 
+
+Se autoriza la reproducción total o parcial, con fines académicos, por cualquier medio o 
+procedimiento, incluyendo la cita bibliográfica del documento, siempre y cuando se reconozca 
+el Derecho de Autor. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+DEDICATORIA 
+
+ 
+
+ 
+
+Esta tesis se la dedico a mi Dios quién supo guiarme por el buen camino, darme fuerzas para 
+seguir adelante y no desmayar en los problemas que se presentaban, enseñándome a encarar las 
+adversidades sin perder nunca la dignidad ni desfallecer en el intento. 
+
+ 
+
+Para mis padres Gustavo Lasluisa y Magdalena Arauz por su apoyo, consejos, comprensión, 
+amor, ayuda en los momentos difíciles, y por ayudarme con los recursos necesarios para 
+estudiar. Me han dado todo lo que soy como persona, mis valores, mis principios, mi carácter, 
+mi empeño, mi perseverancia, mi coraje para conseguir mis objetivos. A mis hermanos Marcelo, 
+Alexandra y Johnny por estar siempre presentes, acompañándome para poderme realizar. A mi 
+Cuñado Jhonny Morales quien, de manera desinteresada, siempre me brindó su apoyo hasta 
+cumplir una de mis metas gracias. 
+
+De manera muy especial quiere dedicarle esta tesis a mi Tío Armando Lasluisa, quien ha sido 
+un pilar importante en mi vida, por sus consejos, ayuda y sobretodo encaminar al ámbito 
+profesional. 
+
+ 
+
+De todo corazón aquella mujer muy especial, a quien amo mucho, mi novia, Ing. Jessica Gaibor, 
+que con su valor y entrega ha sido una persona incondicional en mi vida, ha sido mi soporte, mi 
+mejor amiga, mi consejera, mi apoyo, para seguir adelante y no bajar los brazos en los 
+momentos difíciles, y por su innegable dedicación, amor y paciencia. 
+
+ 
+
+ 
+
+David Ricardo Lasluisa 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+DEDICATORIA 
+
+ 
+
+ 
+
+Esta tesis se la dedico a mi Dios quién supo guiarme por el buen camino, darme fuerzas para 
+seguir adelante y no desmayar en los problemas que se presentaban, enseñándome a encarar las 
+adversidades sin perder nunca la dignidad ni desfallecer en el intento. 
+
+ 
+
+Para mis padres Claudio Padrón y Teresita Padrón por su apoyo, consejos, comprensión, amor, 
+ayuda en los momentos difíciles, y por ayudarme con los recursos necesarios para estudiar. Me 
+han dado todo lo que soy como persona, mis valores, mis principios, mi carácter, mi empeño, mi 
+perseverancia, mi coraje para conseguir mis objetivos. 
+
+ 
+
+ 
+
+Claudio Fernando Padrón 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+AGRADECIMIENTO 
+
+ 
+
+ 
+
+Nuestro sincero agradecimiento a Dios por guiar nuestros pasos a la feliz consecución del sueño 
+más anhelado para nosotros y nuestros padres. 
+
+ 
+
+Un agradecimiento especial a la ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO 
+por darnos la oportunidad de estudiar y ser profesionales. 
+
+A nuestros asesores de tesis Dr. Julio Santillán Castillo, quien con sus sabios conocimientos y 
+experiencia ha guiado el desarrollo y ejecución de la presente tesis, al Ing. Fernando Proaño 
+quien ha sabido brindarnos su tiempo para poder finalizar el presente trabajo. 
+
+ 
+
+ 
+
+Claudio y David 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+.Nosotros, CLAUDIO FERNANDO PADRÓN PADRÓN y DAVID RICARDO LASLUISA 
+ARAUZ somos responsables de las ideas, doctrinas y resultados expuestos en esta Tesis y el 
+patrimonio intelectual de la Tesis de Grado pertenece a la ESCUELA SUPERIOR 
+POLITÉCNICA DE CHIMBORAZO.. 
+
+ 
+
+ 
+
+--------------------------------------------------------- --------------------------------------------------- 
+
+CLAUDIO FERNANDO PADRÓN PADRÓN DAVID RICARDO LASLUISA ARAUZ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ÍNDICE DE ABREVIATURAS 
+
+ 
+
+ 
+
+API: Interfaz de Programación de Aplicaciones. 
+
+ 
+
+GUI: Interfaz Gráfica de Usuario. 
+
+ 
+
+HTML: Lenguaje de Marcado de Hipertexto. 
+
+ 
+
+CSS: Hojas de estilo en cascada 
+
+ 
+
+JSF: JavaServer Faces 
+
+ 
+
+JAVA: Lenguaje de programación 
+
+ 
+
+HTTP: Protocolo de Transferencia de Hipertexto. 
+
+ 
+
+PHP: Hipertext Preprocessor. 
+
+ 
+
+SQL: Structured Query Language 
+
+ 
+
+MYSQL: sistema de gestión de bases de datos 
+
+ 
+
+APACHE: Apache es un servidor Web HTTP 
+
+SSL: Secure Sockets Layer. 
+
+ 
+
+Xampp: Servidor independiente de plataforma 
+
+ 
+
+RESPONSIVE DESING: Diseño Web adaptativo 
+
+ 
+
+W3C: World WIDE Web Consortium. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+TABLA DE CONTENIDO 
+
+ 
+RESUMEN ................................................................................................................................ xiii 
+SUMMARY ............................................................................................................................... xiv 
+INTRODUCCIÓN ........................................................................................................................ 1 
+CAPITULO I ................................................................................................................................ 7 
+1. Marco Teórico .............................................................................................................. 7 
+1.1. Html5 ........................................................................................................................... 7 
+1.1.1. Breve Historia ............................................................................................................. 8 
+1.1.2. Estructura básica de una página en HTML5 ............................................................. 10 
+1.1.3. Ventajas ..................................................................................................................... 12 
+1.1.4 Inconvenientes ........................................................................................................... 13 
+1.2. CSS3 .......................................................................................................................... 13 
+1.2.1 Breve Historia ........................................................................................................... 13 
+1.2.2 Funcionamiento ......................................................................................................... 14 
+1.2.3. Ventajas ..................................................................................................................... 19 
+1.2.4 Inconvenientes ........................................................................................................... 19 
+1.3. JQuery ....................................................................................................................... 19 
+1.3.1 Breve Historia ........................................................................................................... 20 
+1.3.2 Ventajas ..................................................................................................................... 23 
+1.3.3 Inconvenientes ........................................................................................................... 22 
+1.3.4 Funcionalidades de Jquery ........................................................................................ 23 
+1.3.5 Sintaxis de JQuery ..................................................................................................... 24 
+1.4 PRIME FACES ......................................................................................................... 27 
+1.5 Dominio ..................................................................................................................... 29 
+1.6 Web Hosting ................................................................................................................. 
+1.6.1 Ventajas: .................................................................................................................... 31 
+1.6.2 Desventajas: .............................................................................................................. 31 
+CAPITULO II ............................................................................................................................. 33 
+2. .ANÁLISIS COMPARATIVO ENTRE HTML5 Y PRIME FACES PARA EL 
+DESARROLLO DE APLICACIONES WEB. CASO APLICATIVO PATRONATO 
+DE ACCIÓN SOCIAL .NUESTRA SEÑORA DEL MONTE... ............................ 33 
+2.1. Introducción .............................................................................................................. 33 
+2.2. Construcción de Prototipos ....................................................................................... 33 
+2.3. Prototipo con HTML5 ............................................................................................... 33 
+2.4. Prototipo con PRIME FACES ................................................................................... 34 
+2.5. Definición De Los Criterios De Comparación .......................................................... 34 
+2.6. Parámetros De Evaluación ........................................................................................ 35 
+2.6.1 Peso del módulo MÉDICO kB .................................................................................. 35 
+2.6.2 Número de líneas de código ...................................................................................... 36 
+2.6.3 Tiempo de carga de la página Web ........................................................................... 36 
+2.6.4. Cantidad de recursos usados...................................................................................... 37 
+2.6.5. Porcentaje de uso del Procesador .............................................................................. 37 
+2.6.6 Cantidad de Memoria RAM usada expresada en Kb ................................................ 37 
+2.6.7. Cantidad de disco duro usado expresado en Kb ........................................................ 37 
+2.6.8 Ancho de banda usado expresado en bps .................................................................. 37 
+2.7. Análisis De Los Parámetros De Comparación .......................................................... 37 
+2.8. Peso del módulo MÉDICO determinado en kB ........................................................ 38 
+2.9. Número de líneas de código ...................................................................................... 41 
+2.10. Tiempo de carga de la página Web ........................................................................... 44 
+2.11. Cantidad de recursos usados...................................................................................... 47 
+2.12 Análisis estadístico de los datos utilizando Spss 22. ................................................. 50 
+2.12.1 Redactar la hipótesis nula y la hipótesis de investigación. ........................................ 51 
+2.12.2 Definir el valor de significancia. ............................................................................... 51 
+2.12.3 Elección de la prueba ................................................................................................ 51 
+2.12.4 Prueba de normalidad ................................................................................................ 52 
+2.12.5 Análisis TStudent ...................................................................................................... 53 
+CAPITULO III ............................................................................................................................ 55 
+3. MARCO PROPOSITIVO ...................................................................................................... 55 
+3.1. Desarrollo de la aplicación web ................................................................................ 55 
+3.1.1. Estudio preliminar ..................................................................................................... 55 
+3.2. Descripción General de la Metodología .................................................................... 56 
+3.2.1. Fundamentación ........................................................................................................ 56 
+3.2.2 Sistema Modular ....................................................................................................... 56 
+3.2.3. Entregables ................................................................................................................ 57 
+3.3 Involucrados y roles del proyecto ............................................................................. 57 
+3.4 Tecnología ................................................................................................................. 58 
+3.5. Herramientas ............................................................................................................. 58 
+3.5.1 Product Backlog ........................................................................................................ 58 
+3.5.2. Sprint Backlog ........................................................................................................... 59 
+3.5.3. Sprint 1 ...................................................................................................................... 60 
+3.5.4. Sprint 2 ...................................................................................................................... 67 
+3.5.5 Sprint 3 ...................................................................................................................... 71 
+CONCLUSIONES ...................................................................................................................... 76 
+RECOMENDACIONES ............................................................................................................. 76 
+BIBLIOGRAFÍA ......................................................................................................................... 77 
+ANEXOS .................................................................................................................................... 80 
+
+
+ 
+
+ÍNDICE DE TABLAS 
+Tabla 1-1 Soporte De Css1, Css2, Y Css3 ................................................................................................ 13 
+Tabla 2-1 Versiones de JQuery .............................................................................................................. 21 
+Tabla 3-2 Criterios de comparación....................................................................................................... 35 
+Tabla 4-2 Conexión tecnología ADSL ..................................................................................................... 35 
+Tabla 5-2 Peso de Pagina Web .............................................................................................................. 36 
+Tabla 6-2 Valoración del peso de una página Web ............................................................................... 36 
+Tabla 7-2 Líneas de código .................................................................................................................... 36 
+Tabla 8-2 Tiempo de carga .................................................................................................................... 36 
+Tabla 9-2 Valoración del peso ............................................................................................................... 36 
+Tabla 10-2 Porcentaje de uso del procesador ......................................................................................... 37 
+Tabla 11-2 Cantidad de Memoria Ram usada ......................................................................................... 37 
+Tabla 12-2 Cantidad de disco duro usado ............................................................................................... 37 
+Tabla 13-2 Cantidad de Ancho de banda ................................................................................................ 37 
+Tabla 14-2 Resultados del Peso del módulo Médico Valoración Cuantitativa y Cualitativa ................... 38 
+Tabla 15-2 Resultados del Peso del Módulo Médico expresado en porcentajes ..................................... 39 
+Tabla 16-2 Resultados del módulo médico transformados a una escala cuantitativa ............................ 41 
+Tabla 17-2 Líneas de Código para el módulo médico .............................................................................. 42 
+Tabla 18-2 Líneas de código para el Módulo Médico transformados a una escala cuantitativa ............ 44 
+Tabla 19-2 Tiempo de Carga de la Interfaz del médico ........................................................................... 44 
+Tabla 20-2 Tiempo de carga de la Interfaz Médico ................................................................................. 45 
+Tabla 21-2 Tiempo de Carga de la Interfaz Médico ................................................................................ 47 
+Tabla 22-2 Resultados del Test ................................................................................................................ 49 
+Tabla 23-2 Resultados de recursos usados expresados a escala cuantitativa ........................................ 49 
+Tabla 24-2 Resultados de la suma de Escalas cuantitativas ................................................................... 50 
+Tabla 25-2 Resultado de la suma total de las escalas cuantitativas ....................................................... 50 
+Tabla 26-2 Normalidad de los datos ....................................................................................................... 53 
+Tabla 27-2 Valores para realizar el análisis T Student ............................................................................ 53 
+Tabla 28-2 Resultados de TStudent ........................................................................................................ 54 
+Tabla 29-3 Roles y Responsabilidades ...................................................................................................... 57 
+Tabla 30-3 Tecnología Software .............................................................................................................. 58 
+Tabla 31-3 Tecnología Hardware ............................................................................................................. 58 
+Tabla 32-3 Product Backlog ..................................................................................................................... 59 
+Tabla 33-3 Sprint Backlog ........................................................................................................................ 59 
+Tabla 34-3 Sprint 1 .................................................................................................................................. 61 
+Tabla 35-3 Caso de Prueba Usuarios........................................................................................................ 67 
+Tabla 36-3 Sprint 2 .................................................................................................................................. 68 
+Tabla 37-3 Caso de Prueba Listado de Fichas Medicas ............................................................................ 70 
+Tabla 38-3 Sprint 3 .................................................................................................................................. 71 
+Tabla 39-3 Casos del listado general de fichas Médicas ........................................................................... 73 
+Tabla 40-3 Ceremonia de Cierre ................................................................................................................ 74 
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ÍNDICE DE FIGURAS 
+Figura 1-1: Evolución del HTML ............................................................................................................. 10 
+Figura 2-1: Estructura Básica de HTML5 ............................................................................................... 10 
+Figura 3-1 Etiquetas Semánticas .......................................................................................................... 11 
+Figura 4-1 Archivo externo de CSS ........................................................................................................ 16 
+Figura 5-1 Estructura de una Hoja de estilo CSS ................................................................................... 19 
+Figura 6-1 Competidores PRIME FACES ............................................................................................... 28 
+Figura 7-1 Tendencias de google trend en librerías java server faces .................................................. 29 
+Figura 8-2 Resultados en forma gráfica expresada en porcentaje ....................................................... 40 
+Figura 9-2 Resultados en forma gráfica Diferencia en Kb .................................................................... 40 
+Figura 10-2 Diferencia líneas de código ................................................................................................. 43 
+Figura 11-2 Diferencia expresada en porcentajes .................................................................................. 43 
+Figura 12-2 Representación gráfica del Tiempo de Carga ..................................................................... 46 
+Figura 13-2 Representación gráfica del tiempo de carga expresada en porcentajes ............................ 46 
+Figura 14-2 Características del equipo utilizado para realizar el test .................................................... 48 
+Figura 15-2 Velocidad de Conexión ........................................................................................................ 48 
+Figura 16-3 Base de datos ...................................................................................................................... 64 
+Figura 17-3 Arquitectura de Red ............................................................................................................ 65 
+Figura 18-3 Arquitectura de Componentes ............................................................................................ 65 
+Figura 19-3 Diagrama de Despliegue ..................................................................................................... 66 
+Figura 20-3 Inicio de Sesión .................................................................................................................... 67 
+Figura 21-3 Anulación en Citas médica .................................................................................................. 70 
+Figura 22-3 Listado de Fichas Médicas ................................................................................................... 73 
+Figura 23-3 Interfaz de Usuario .............................................................................................................. 75 
+Figura 24-3 Gráfica Burn Down .............................................................................................................. 75 
+
+ RESUMEN 
+
+ 
+
+Se realizó el análisis y comparación de las tecnologías HTML5 Y PRIMEFACES, para realizar 
+una aplicación Web que facilite la gestión de turnos y fichas médicas en el Patronato de Acción 
+Social del cantón Quero, provincia de Tungurahua. Se procedió a analizar dos módulos con 
+funciones similares, pero con tecnologías diferentes el primero creado bajo el estándar PRIME 
+FACES y el segundo bajo el estándar HTML5. Se estableció diferentes parámetros de 
+valoración para determinar la tecnología más idónea para el desarrollo de aplicaciones Web. Al 
+analizar que tecnología provee una mejor eficiencia al momento de mostrar el contenido de una 
+página Web. Se compararon los siguientes parámetros para establecer que tecnología es más 
+eficiente: Peso del módulo, Número de líneas de código, Tiempo de carga de la página Web, 
+Porcentaje de uso del Procesador, Cantidad de Memoria RAM usada, Cantidad de disco duro 
+usado, Ancho de banda usado. Al realizar la respectiva evaluación y una vez determinado los 
+parámetros usados obtuvimos que HTML5 es más eficiente que PRIMEFACES en un 39.33%. 
+De esta manera se procedió con el desarrollo del sistema de control de turnos y fichas médicas 
+utilizando la tecnología HTML5. Luego de comparar las dos tecnologías HTML5 Y PRIME 
+FACES, se concluye que para desarrollar aplicaciones web de manera eficiente y con mayor 
+interactividad con el usuario, la tecnología que más se ajusta a estos parámetros de desarrollo y 
+factibilidad es HTML5. Se recomienda usar la tecnología HTML5 para el desarrollo de 
+aplicaciones Web ya que es más eficiente que PRIME FACES y es el nuevo estándar de diseño 
+de páginas Web permitiendo compatibilidad multiplataforma y con varios dispositivos a la vez, 
+mejorando su experiencia de usuario y proporcionando una alternativa en el desarrollo de 
+sistemas médicos iterativos. 
+
+Palabas Claves: <TECNOLOGÍA [HTML5]> < TECNOLOGÍA [PRIMEFACES] > < 
+LENGUAJE DE PROGRAMACIÓN [JAVA] > < LENGUAJE DE PROGRAMACIÓN [PHP] 
+> < MOTOR DE BASE DE DATOS [MYSQL] > < LENGUAJE DE PROGRAMACIÓN 
+[JQUERY] > < LENGUAJE DE PROGRAMACIÓN [CSS3] > <DOMINIO> <HOSTING> 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+SUMMARY 
+
+ 
+
+ 
+
+ 
+
+Analysis and comparison of tecnologies HTML5 and PRIMEFACES was conducted to make a 
+Web application which facilitates the management of shifts and medical records at the 
+Foundation for Social Action in the Canton Quero, in the province of Tungurahua. 
+
+ 
+
+Two modules with similar functions but different technologies were analyzed; the first was 
+created under the PRIMEFACES Standard and the second one under the HTML5 standard. 
+
+Different valuation parameters were established to determine the most suitable technology for 
+developing Web applications. When analyzing which technology provides better efficiency 
+when displaying the contents of a Web page. 
+
+ 
+
+The following parameters were compared to establish which technology is more efficient: 
+Module weight, number code lines, Web page loading time, Percentage of processor usage, total 
+of RAM 
+
+used, total of hard disk used, bandwidth used. When performing the respective evaluation and 
+once the parameters used are determined, we obtained that HTML5 is 39.33% more efficient tan 
+PRIMEFACES. 
+
+ 
+
+In this way the development of the control system of shifts and medical records using HTML5 
+technology was carried out. After comparing both technologies HTML5 and PRIMEFACES, we 
+conclude that to develop Web applications efficiently and with greater interactivity with the 
+user, the technology that best fits these parameters of development and efficiency is HTML5. 
+
+ 
+
+We recommend to use HTML5technology for the development of Web applications because it 
+is more efficient than PRIMEFACES because it is the new standard for web design allowing 
+cross-platform compatibility with multiple device at the same time, improving user experience 
+and providing an alternative for developing interactive medical systems. 
+
+ 
+
+Keywords: <TECHNOLOGY [HTML5]> <TECHNOLOGY [PRIMEFACES]> 
+<PROGRAMMING LANGUAGES [JAVA]> <PROGRAMMING LANGUAGES [PHP]> 
+<DATABASE ENGINE [MYSQL] <PROGRAMMING LANGUAGES [JQUERY]> 
+<PROGRAMMING LANGUAGES [CSS3]> < DOMAIN> <HOSTING> 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+INTRODUCCIÓN 
+
+ 
+
+ 
+
+La industria de desarrollo de las tecnologías Web o aplicaciones Web para Internet e Intranet 
+presenta una serie de ventajas con respecto al software de escritorio, con lo cual logrará 
+aprovechar y acoplar los recursos de su empresa de una forma mucho más práctica que el 
+software tradicional. Las tecnologías como HTML5, PRIMEFACES; entre otras se han 
+convertido hoy en día en la plataforma principal para el desarrollo Web. 
+
+ 
+
+El diseño Web en anteriores años dependía únicamente de Adobe, debido a su funcionalidad 
+con flash el cual permitía la creación de sitios Web de gran nivel y profesionalismo. Pero el uso 
+de flash comenzó a ser obsoleto e ineficiente frente a los dispositivos móviles que ya se podían 
+conectar a la Web, es aquí justamente donde ingresa HTLM5, que suple todas las necesidades 
+que los desarrolladores estaban buscando, y lo más importante compatible con todos los 
+dispositivos que permitían ver un documento Web. 
+
+ 
+
+Como finalidad el desarrollo de esta tesis tiene el estudio comparativo entre las tecnologías de 
+HTML5 y PRIME FACES para el desarrollo de aplicaciones Web, aplicado al patronato de 
+acción social nuestra señora del monte (Quero). 
+
+ 
+
+El método utilizado para la investigación, fue analítico e investigativo. Por lo cual se elaboró 
+prototipos del sistema SISMEDIC con las tecnologías de estudia realizando la comparación 
+pertinente, obteniendo resultados de manera cuantitativa y cualitativa, los parámetros e 
+indicadores de Eficiencia para este análisis son tiempo de carga de la página Web Peso de la 
+página Web Costo de implementarlo en un hosting. Además, tomando en consideración dos 
+puntos de vista como son: Desde el punto de vista del programador Facilidad de personalizar el 
+código Número de líneas de código Facilidad para implementar nuevas funciones al sistema, 
+Curva de aprendizaje Facilidad o compatibilidad con los hostings y el punto de vista del usuario 
+Que interfaz le parece más atractiva Número de clics para terminar una determinada tarea Curva 
+de aprendizaje. 
+
+ 
+
+Mediante el estudio, análisis y comparación de los parámetros de eficiencia: compatibilidad, 
+rendimiento, líneas de código y lenguaje de marcado se obtuvo los siguientes resultados: 
+HTML5 con el 90% equivalente a Muy Bueno y Prima faces con el 60% equivalente a Bueno, 
+
+
+siendo HTML5 la tecnología utilizada para el desarrollo del Sistema de Información 
+Institucional (SISMEDIC). 
+
+ 
+
+El Capítulo I, Marco Teórico; describe los fundamentos teóricos de la investigación. 
+
+El Capítulo II, Análisis Comparativo; describe la construcción del prototipo con cada tecnología 
+de estudio, la definición de parámetros de productividad, análisis comparativo de cada 
+tecnología de estudio y la demostración de la hipótesis. 
+
+ 
+
+El Capítulo III, Implementación de la Aplicación; describe la construcción de la parte aplicativa 
+de la tesis SISMEDIC (Sistema MÉDICO) utilizando la metodología (MVC) modelo vista 
+controlador Por último se encuentran las conclusiones, recomendaciones y anexos del presente 
+trabajo de investigación. 
+
+ 
+
+El trabajo realizado servirá como base para escoger una tecnología sobre la cuál desarrollar una 
+aplicación Web, obteniendo la máxima eficiencia de ella. 
+
+ 
+
+ 
+
+Justificación Del Proyecto De Tesis 
+
+ 
+
+El hecho de realizar una aplicación Web, lleva consigo la responsabilidad de hacerla de la mejor 
+manera, y para eso existen estándares de calidad que se debe analizar para saber cuál es el 
+correcto, para el desarrollo de la herramienta informática, para lo cual el estándar a estudiar será 
+Web Design and Applications propuesto por la W3C, que se asemejan más a las necesidades 
+reales del proyecto, ya que la correcta aplicación de éstos, lo que llevará a la consecución de un 
+producto de total satisfacción del cliente. 
+
+ 
+
+Las aplicaciones Web tienen una amplia apertura en el desarrollo y automatización de procesos 
+lo cual con lleva a analizar entre las tecnologías de desarrollo Web HTML5 y PRIME FACES 
+para conocer cual la que mejor se adapta a los cambios de la Web 2, se ha escogido estas dos 
+tecnologías debido a que java es un lenguaje de programación con un importante crecimiento en 
+los últimos años y la manera que presenta los contenidos en la Web se realiza mediante Java 
+Server Face el componente más utilizado de JSF es PRIME FACES por el otro lado tenemos 
+HTML5 que se presenta como el nuevo estándar para presentar el contenido de una página 
+Web ya que este estándar permite una gran compatibilidad multiplataforma además de facilitar 
+la compatibilidad con varios dispositivos llámense estos Tablets, Notebooks, Smartphone, Pc , 
+etc. 
+
+ 
+
+
+ 
+
+A continuación, mencionaremos algunas de las características más significativas de HTML5: 
+
+ 
+
+. Al ser el código más sencillo HTML5 y simplificado, cargan más rápido las páginas en el 
+navegador. 
+. Las páginas y los elementos que contienen, se ven perfectamente en todos los navegadores. 
+La gran mayoría de los navegadores de los teléfonos Smartphone y las tabletas, son 
+compatibles con HTML5. 
+. Los plugins, widgets y botones que ofrecen los desarrolladores de las redes como Facebook, 
+Twitter y otras, escritos en HTML 5 funcionan excelentemente, con más opciones que los 
+clásicos en XHTML o que los iframes. 
+. Es posible insertar directamente videos en las páginas sin tener que acudir a los iframes o 
+usar la etiqueta object. 
+. HTML 5 incluye etiquetas orientadas principalmente a los buscadores, para facilitarles 
+comprender el contenido de las páginas, lo que nos beneficia, por ejemplo: header, footer, 
+article, nav, etc. 
+. Permite la Geolocalización del usuario. 
+
+
+ 
+
+Otras de las razones es el empleo del micro formato en las páginas Web, que algunos son 
+totalmente incompatibles con otros lenguajes por lo que no validan correctamente a no ser que 
+se use HTML5. 
+
+ 
+
+Para proporcionar un sustento a la realización de este proyecto se seguirá técnicas de 
+recopilación de información como las encuestas puesto que proporcionan suficiente información 
+para validar que se ha cumplido con el estándar Web Design and Aplications propuesto por la 
+W3C.Para el desarrollo del proyecto se seguirá el método científico para dar seguimiento a la 
+investigación y obtener resultados eficientes que comprueben el éxito del mismo, además de 
+contar con herramientas como: Google Page Speed, Monitor para conocer al rapidez con la que 
+se cargan las páginas Web, Monitis realiza un test simultáneo de la página en diferentes 
+localizaciones: Estados Unidos, Europa y Asia/Pacífico. Mediante la implementación una 
+aplicación Web al Patronato de acción social Nuestra señora del monte del cantón Quero, 
+concretamente en los módulos de .Información de turnos asignados a cada médico y la gestión 
+de fichas medicas., Los cuáles serán desarrollados con herramientas de desarrollo libre, como 
+actualmente es solicitado por empresas públicas. Se espera replicarlo en toda la región ya que 
+este proyecto cuenta con el apoyo del Ministerio de Salud Pública, Consejo Provincial de Salud 
+de Tungurahua y el Gobierno Descentralizado del Cantón Quero. 
+
+ 
+
+
+La aplicación a realizarse debe cumplir ciertos lineamientos con respecto a la Escuela Superior 
+Politécnica de Chimborazo y al vigente Plan Nacional del Buen Vivir, en tal sentido detallamos 
+a continuación cómo están enmarcada nuestra aplicación con respecto a estos dos lineamientos. 
+Con respecto a los lineamientos planteados por la ESPOCH, la aplicación se enmarca en la 
+quinta Línea institucional de investigación, y dentro de ésta en el tercer Programa. 
+
+Línea Institucional De Investigación: Tecnologías de la información, comunicación y procesos 
+industriales 
+
+ 
+
+Programa: Programa para el desarrollo de aplicaciones de software para procesos de gestión y 
+administración pública y privada. De acuerdo al Plan Nacional del Buen Vivir, se encuentra 
+ubicada en el primer Objetivo y dentro de éste en la Décima Política. 
+
+ 
+
+Objetivos 
+
+ 
+
+Objetivo General 
+
+ 
+
+Analizar y comparar entre HTML5 y PRIME FACES, realizar una aplicación Web que facilite 
+la gestión de personal y fichas médicas en el patronato de acción social. 
+
+ 
+
+ Objetivos Específicos 
+
+ 
+
+. Estudiar HTML5 y PRIME FACES 
+. Establecer los parámetros de comparación y evaluación que nos permitirá la selección de la 
+tecnología más apropiada 
+. Desarrollar prototipos con HTML5 y PRIME FACES. 
+. Realizar el análisis comparativo basándose en los parámetros seleccionados para escoger la 
+tecnología de mejores prestaciones para el desarrollo de las aplicaciones Web 
+. Desarrollar el sistema de información de turnos y gestión de fichas médicas el patronato de 
+. Acción social del cantón Quero 
+
+
+ 
+
+Hipótesis 
+
+ 
+
+HTML5 es más eficiente que PRIME FACES para el desarrollo de aplicaciones Web en la capa 
+de presentación. 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+Formulación general del proyecto de tesis 
+
+ 
+
+Antecedentes 
+
+La industria de desarrollo de las tecnologías Web o aplicaciones Web para Internet e Intranet 
+presenta una serie de ventajas con respecto al software de escritorio, con lo cual logrará 
+aprovechar y acoplar los recursos de su empresa de una forma mucho más práctica que el 
+software tradicional. 
+
+En la actualidad la presencia de aplicaciones Web tanto institucional como personales es cada 
+vez más usual e inclusive para la gran mayoría de empresas y entidades que proporcionan 
+servicios es una necesidad de primer nivel, con el ánimo de ofrecer mejores y oportunos 
+servicios a sus clientes. 
+
+ 
+
+Las instituciones públicas y privadas en los últimos años han incorporado en sus áreas el 
+departamento de informática el cual controla supervisa y automatiza los procesos factibles y de 
+vital importancia para la mejor atención y facilidad de manejo de información. 
+
+En el patronato de acción social nuestra señora del monte (Quero) cuenta con un método manual 
+de ingreso y control de turnos, por lo tanto, es necesario automatizar los procesos de ingreso 
+modificación y eliminación del personal vigente con las respectivas reglas y lineamientos de la 
+institución, además es de vital importancia el control de turnos diarios por parte del personal 
+administrativo el cual cuenta con un deficiente proceso de asignación y registro de turnos de 
+cada paciente. 
+
+ 
+
+La principal causa por la ineficiencia y lentitud al realizar los procesos de registro del personal y 
+el control de turnos, están relacionados por la falta de un sistema informático que brinde todas 
+las facilidades al adoptar todos los problemas, y convertirlos en procesos eficientes que faciliten 
+los procedimientos de gestión de personal y control de turnos por parte del personal 
+administrativo de la institución. 
+
+ 
+
+El presente estudio tiene como propósito la creación de una aplicación Web que ayude al 
+control y separación de turnos de manera eficiente en el patronato de acción social nuestra 
+señora del monte (Quero). De esta manera garantizando la integridad, seguridad, confiabilidad 
+de los datos y evitando la desorganización al momento de la separación de turnos. ¿Cuál de las 
+siguientes tecnologías HTML5 y PRIME FACES es la más adecuada para realizar páginas Web 
+que se adapten a las nuevas normas de la W3C?, Que permita una fácil implementación en un 
+host y poder crear una mejor experiencia de usuario. Para de esta manera poder desarrollar un 
+
+
+sistema Web que permita gestionar el personal y turnos patronato de acción social Nuestra 
+Señora Del Monte (Quero). 
+
+ 
+
+Se ha tomado como punto de investigación el patronato de acción social nuestra señora del 
+monte (Quero). Ya que esta fundación de acción social posee varios departamentos, numerosos 
+empleados y gran cantidad de pacientes, por el momento es el que más conflictos presenta en 
+cuanto a la gestión de su personal y reservación de turnos, por lo que se desarrollara una 
+solución automatizada para realizar la gestión de personal y la reservación de turnos, debido a 
+que la gestión de personal y la reservación de turnos es su principal prioridad a ser resuelta. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+CAPITULO I 
+
+ 
+
+1. Marco Teórico 
+
+ 
+
+ 
+
+1.1. Html5 
+
+ 
+
+ 
+
+HTML5 no es una nueva versión del antiguo lenguaje de etiquetas, ni siquiera una mejora de 
+esta ya antigua tecnología, sino un nuevo concepto para la construcción de sitios Web y 
+aplicaciones en una era que combina dispositivos móviles, computación en la nube y trabajos en 
+red (Gauchat 2012, p. 16). 
+
+ 
+
+HTML fue una propuesta de una estructura básica de páginas Web, para organizar su contenido 
+y compartir información. 
+
+ 
+
+HTML motivó a varias compañías a desarrollar nuevos lenguajes y programas para agregar 
+características a la Web nunca antes implementadas. Estos desarrollos iniciales crecieron hasta 
+convertirse en populares y poderosos accesorios. Simples juegos y bromas animadas pronto se 
+transformaron en sofisticadas aplicaciones, ofreciendo nuevas experiencias que cambiaron el 
+concepto de la Web para siempre. De las opciones propuestas, Java y Flash fueron las más 
+exitosas; ambas fueron masivamente adoptadas y ampliamente consideradas como el futuro de 
+Internet. Sin embargo, tan pronto como el número de usuarios se incrementó e Internet pasó de 
+ser una forma de conectar amantes de los ordenadores a un campo estratégico para los negocios 
+y la interacción social. 
+
+ 
+
+Tanto java y flash fueron concebidos como (plugins) lo que dificultaba su compatibilidad, 
+debido a que no existía comunicación e integración entre aplicaciones y documentos esta 
+adversidad fue crítica y derivo al nacimiento de HTML y a la implementación de JavaScript 
+como lenguaje interpretado e incluido en los navegadores evitaba las limitaciones de los 
+plugins. 
+
+ Al incluir JavaScript en los navegadores se mejoraba notablemente la experiencia de los 
+usuarios y proveer funcionalidad para la Web. 
+
+ 
+
+Junto con nuevas funciones y técnicas rápidas de acceso a la red, los navegadores también 
+mejoraron gradualmente sus intérpretes JavaScript. Lo que potencio considerablemente el 
+alcance de JavaScript, inclusive presentando características que ni java o flash podrían ofertar. 
+Los desarrolladores, impulsados por las mejoras otorgadas por los navegadores, provoco un 
+
+
+crecimiento exponencial en el uso de JavaScript. La innovación y los increíbles resultados 
+obtenidos llamaron la atención de más programadores. Pronto lo que fue llamado la .Web 2.0. 
+nació y la percepción de JavaScript en la comunidad de programadores cambió radicalmente. 
+JavaScript era claramente el lenguaje que permitía a los desarrolladores innovar y hacer cosas 
+que nadie había podido hacer antes en la Web. En los últimos años, programadores y 
+diseñadores Web alrededor del mundo surgieron con los más increíbles trucos para superar las 
+limitaciones de esta tecnología y sus iniciales deficiencias en portabilidad. Gracias a estas 
+nuevas implementaciones, JavaScript, HTML y CSS se convirtieron pronto en la más perfecta 
+combinación para la necesaria evolución de la Web. HTML5 es, de hecho, una mejora de esta 
+combinación, el pegamento que une todo. HTML5 propone estándares para cada aspecto de la 
+Web y también un propósito claro para cada una de las tecnologías involucradas. A partir de 
+ahora, HTML provee los elementos estructurales, CSS se encuentra concentrado en cómo 
+volver esa estructura utilizable y atractiva a la vista, y JavaScript tiene todo el poder necesario 
+para proveer dinamismo y construir aplicaciones Web completamente funcionales. 
+
+ 
+
+Las barreras entre sitios Webs y aplicaciones finalmente han desaparecido. Las tecnologías 
+requeridas para el proceso de integración están listas. El futuro de la Web es prometedor y la 
+evolución y combinación de estas tres tecnologías (HTML, CSS y JavaScript) en una poderosa 
+especificación está volviendo a Internet la plataforma líder de desarrollo. HTML5 indica 
+Claramente el camino. 
+
+ 
+
+1.1.1. Breve Historia 
+
+ 
+
+El origen de HTML se remonta a 1980, cuando el físico Tim Berners-Lee, trabajador del CERN 
+(Organización Europea para la Investigación Nuclear) propuso un nuevo sistema de "hipertexto" 
+para compartir documentos. Los sistemas de "hipertexto" habían sido desarrollados años antes. 
+En el ámbito de la informática, el "hipertexto" permitía que los usuarios accedieran a la 
+información relacionada con los documentos electrónicos que estaban visualizando. De cierta 
+manera, los primitivos sistemas de "hipertexto" podrían asimilarse a los enlaces de las páginas 
+Web actuales. Tras finalizar el desarrollo de su sistema de "hipertexto", Tim Berners-Lee lo 
+presentó a una convocatoria organizada para desarrollar un sistema de "hipertexto" para 
+Internet. Después de unir sus fuerzas con el ingeniero de sistemas Robert Cailliau, presentaron 
+la propuesta ganadora llamada World WIDE Web (W3). 
+
+ 
+
+El primer documento formal con la descripción de HTML se publicó en 1991 bajo el nombre 
+HTML Tags (Etiquetas HTML), la primera propuesta oficial para convertir HTML en un 
+estándar se realizó en 1993 por parte del organismo IETF (Internet Engineering Task Force). 
+
+
+Aunque se consiguieron avances significativos (en esta época se definieron las etiquetas para 
+imágenes, tablas y formularios) ninguna de las dos propuestas de estándar, llamadas HTML y 
+HTML+ consiguieron convertirse en estándar oficial. 
+
+ 
+
+En 1995, el organismo IETF organiza un grupo de trabajo de HTML y consigue publicar, el 22 
+de septiembre de ese mismo año, el estándar HTML 2.0. A pesar de su nombre, HTML 2.0 es el 
+primer estándar oficial de HTML. 
+
+ 
+
+A partir de 1996, los estándares de HTML los publica otro organismo de estandarización 
+llamado W3C (World WIDE Web Consortium). La versión HTML 3.2 se publicó el 14 de 
+Enero de 1997 y es la primera recomendación de HTML publicada por el W3C. Esta revisión 
+incorpora los últimos avances de las páginas Web desarrolladas hasta 1996, como applets de 
+Java y texto que fluye alrededor de las imágenes. 
+
+ 
+
+HTML 4.0 se publicó el 24 de Abril de 1998 (siendo una versión corregida de la publicación 
+original del 18 de Diciembre de 1997) y supone un gran salto desde las versiones anteriores. 
+Entre sus novedades más destacadas se encuentran las hojas de estilos CSS, la posibilidad de 
+incluir pequeños programas o scripts en las páginas Web, mejora de la accesibilidad de las 
+páginas diseñadas, tablas complejas y mejoras en los formularios. 
+
+ 
+
+La última especificación oficial de HTML se publicó el 24 de diciembre de 1999 y se denomina 
+HTML 4.01. Se trata de una revisión y actualización de la versión HTML 4.0, por lo que no 
+incluye novedades significativas. 
+
+ 
+
+Desde la publicación de HTML 4.01, la actividad de estandarización de HTML se detuvo y el 
+W3C se centró en el desarrollo del estándar XHTML. Por este motivo, en el año 2004, las 
+empresas Apple, Mozilla y Opera mostraron su preocupación por la falta de interés del W3C en 
+HTML y decidieron organizarse en una nueva asociación llamada WHATWG (Web Hypertext 
+Application Technology Working Group). 
+
+ 
+
+
+http://2.bp.blogspot.com/-vz2EQDgH_Hw/U_7gDNpl1ZI/AAAAAAAAAGY/Lzz6mvrfjY8/s1600/html4-vs-html5.jpg
+http://3.bp.blogspot.com/-rtSOygkQUxY/U3YkdCtPJTI/AAAAAAAACgE/bvqFZQ6MyF4/s1600/estructura.png 
+
+
+ Figura 1-1: Evolución del HTML 
+
+ Fuente: http://blog.cregarru.com/2014/08/curso-html-5-introduccion.html 
+
+ 
+
+La actividad actual del WHATWG se centra en el futuro estándar HTML 5, cuyo primer 
+borrador oficial se publicó el 22 de enero de 2008. Debido a la fuerza de las empresas que 
+forman el grupo WHATWG y a la publicación de los borradores de HTML 5.0, en marzo de 
+2007 el W3C decidió retomar la actividad estándarizadora de HTML. 
+
+ 
+
+1.1.2. Estructura básica de una página en HTML5 
+
+ 
+
+En HTML5 la estructura interna básica de una página Web se ha simplificado, reduciendo el 
+código innecesario hasta quedarse con el esqueleto básico, que sería el siguiente ver figura (1-
+1): 
+
+ 
+
+ 
+
+Figura 2-1: Estructura Básica de HTML5 
+
+ Fuente: http://HTML5ya.blogspot.com/ 
+
+ 
+
+ 
+
+ 
+
+
+http://www.desarrolloweb.com/articulos/images/html5/aprender-1.jpg 
+
+
+Etiqueta Head 
+
+ 
+
+Todo lo que coloquemos entre las etiquetas <head> y </head>, aunque no se visualiza en el 
+navegador, ofrece información importante sobre la propia página, por lo que en el <head> se 
+introduce información referente al a codificación de la página (para que aparezcan símbolos 
+como la "ñ", "ç" o los acentos correctamente) utilizando meta charset="utf-8".El título de la 
+página, que aparece en la pestaña del navegador (utilizando <title>). 
+
+ 
+
+La descripción de la página, información destinada básicamente a los buscadores 
+
+<meta name="description" content="Resumen del contenido de la página"> 
+
+El código CSS que la página utilizará, ya sea interna o externamente 
+
+<style type="text/css"> </style> <link rel=stylesheet href="css/estilo.css" type="text/css"/> 
+
+La programación en JavaScript 
+
+<script type="text/JavaScript"> </script> 
+
+Etiqueta Body. 
+
+ 
+
+Todo lo que coloquemos entre las etiquetas <body> y </body> es todo aquello que sí se tiene 
+que visualizar en el navegador, es decir etiquetas semánticas ver figura (3-1): 
+
+ 
+
+ 
+
+Figura 3-1 Etiquetas Semánticas 
+
+Fuente: http://www.desarrolloWeb.com/articulos/aprende-HTML5-5-minutos.html 
+
+
+ 
+
+<header>: Es el equivalente a la cabecera de la página Web. Contiene el título o nombre de la 
+empresa/titular de la página, logo e información relacionada. 
+
+<nav>: Contiene los enlaces (barra de navegación) externos o internos de la página. 
+
+<section>: Sirve para mostrar grandes bloques de contenido de la página. Puede contener 
+diferentes sub-apartados de diferentes temas (de tipo <article>). 
+
+<article>: Es una caja independiente de contenido que puede estar contenida (o no) dentro de 
+un <section>: Normalmente utilizada para contenidos no demasiado extensos. 
+
+<aside>: Define un bloque de contenido relacionado de manera indirecta con el contenido 
+principal, pero que no es esencial para la compresión del mismo. 
+
+<footer>: Equivale al pie de página de un apartado concreto (<section>, <article>...) o de la 
+página Web en general. 
+
+ 
+
+1.1.3. Ventajas 
+
+ 
+
+. Es nativo, y por tanto independiente de plugins de terceros. Es decir, no pertenece a nadie, es 
+opensource. Es más semántico, con etiquetas que permiten clasificar y ordenar en distintos 
+niveles y estructuras el contenido. Además, incorpora metadatos de manera más formal, 
+favoreciendo el posicionamiento SEO y la accesibilidad. 
+. El código es más simple lo que permite hacer páginas más ligeras que se cargan más 
+rápidamente favoreciendo la usabilidad y la indexación en buscadores. 
+. Ofrece una compatibilidad mayor con los navegadores de dispositivos móviles. 
+. Incluye la etiqueta de dibujo canvas, que ofrece más efectos visuales. 
+. Ofrece soporte a codecs específicos. 
+. Posibilita la inserción de vídeos y audio de forma directa. 
+. Permite la geolocalización del usuario. Algo muy útil para el marketing móvil. 
+. Tiene la capacidad de ejecutar páginas sin estar conectado. 
+. Incorpora nuevas capacidades JavaScript que aumentan la capacidad de almacenamiento. 
+Frente a las cookies que dejaban almacenar algunos kilobytes, ahora se puede conseguir el 
+almacenamiento de entre 5 y 10 megas, dependiendo de la plataforma. Además, se permiten 
+múltiples JavaScript corriendo en paralelo en una misma página. 
+. Dispone de nuevas capacidades CSS3 como posibilidad de usar cualquier fuente o tipografía 
+en HTML, columnas de texto, opacidad, transparencia, canales alpha, contraste, saturación, 
+brillo, animaciones de transición y transformación, bordes redondeados, gradientes, sombras, 
+etc. 
+. Permite realizar diseños adaptables a distintos dispositivos (Web, tablets, móviles, etc.). 
+
+
+ 
+
+
+1.1.4 Inconvenientes 
+
+ 
+
+. La especificación de HTML 5 no ha finalizado, aún pueden sucederse cambios. 
+. No todo funciona en todos los navegadores por lo que se debe usar prefijos u otras opciones. 
+. El estándar HTML5 aumentó en un período relativamente corto y ello produjo discordancias 
+en la implementación de atributos CSS, etiquetas HTML y API de JavaScript. A veces, estas 
+características se comportan de manera diferente en plataformas distintas. Sin embargo, hay 
+herramientas disponibles para resolver estas disconformidades. 
+
+
+ 
+
+ 
+
+1.2. CSS3 
+
+ 
+
+1.2.1 Breve Historia 
+
+ 
+
+Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, alrededor del 
+año 1970. El gran impulso de los lenguajes de hojas de estilos se produjo con el boom de 
+Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos 
+electrónicos. La guerra de navegadores y la falta de un estándar para la definición de los estilos 
+dificultaban la creación de documentos con la misma apariencia en diferentes navegadores. 
+
+En 1995, el W3C decidió apostar por el desarrollo y estandarización de CSS y lo añadió a su 
+grupo de trabajo de HTML. A finales de 1996, el W3C publicó la primera recomendación 
+oficial, conocida como "CSS nivel 1". La versión de CSS que utilizan todos los navegadores de 
+hoy en día es CSS 2.1. (web, libros 2014, pag. 2). 
+
+Las hojas de estilo en cascada son una estructura Web que ha sido implementada con HTML5. 
+CSS3 es la última versión de las hojas de estilo, la cual presenta mejoras sobre los elementos 
+que componen la página Web y un gran número de efectos visuales que lo diferencian de las 
+versiones anteriores. (Torres, lic. Manuel 2014), ver Tabla (1-1) 
+
+ 
+
+Navegador 
+
+Motor 
+
+CSS 1 
+
+CSS 2.1 
+
+CSS 3 
+
+Google 
+Chrome 
+
+WebKit 
+
+Completo desde la 
+versión 85 del motor 
+
+Completo 
+
+Todos los selectores, pseudo-
+clases y muchas propiedades 
+
+Internet 
+Explorer 
+
+Trident 
+
+Completo desde la 
+versión 7.0 del 
+navegador 
+
+Completo 
+
+Todos los selectores, pseudo-
+clases y muchas propiedades a 
+partir de la versión 10.0 del 
+
+
+
+
+navegador 
+
+Firefox 
+
+Gecko 
+
+Completo desde la 
+versión 1.0 del 
+navegador 
+
+Completo 
+
+Todos los selectores, pseudo-
+clases y muchas propiedades 
+
+Safari 
+
+WebKit 
+
+Completo desde la 
+versión 85 del motor 
+
+Completo 
+
+Todos los selectores, pseudo-
+clases y muchas propiedades 
+
+Opera 
+
+Presto 
+
+Completo desde la 
+versión 1.0 del 
+navegador 
+
+Completo 
+
+Todos los selectores, pseudo-
+clases y muchas propiedades 
+
+ 
+
+
+
+Tabla 1-1 Soporte De Css1, Css2, Y Css3 
+
+Fuente: https://librosWeb.es/libro/css/capitulo_1/soporte_de_css_en_los_navegadores.html 
+
+ 
+
+1.2.2 Funcionamiento 
+
+ 
+
+Al igual que pasa con JavaScript, no tenemos una única manera de incluir nuestro 
+código CSS3 dentro de los documentos HTML5por lo tanto lo incluimos dentro del fichero 
+HTML. 
+
+Una de las utilidades más evidentes de CSS es la posibilidad de aplicar un estilo a múltiples 
+páginas HTML, no teniendo que repetir los mismos estilos cada vez que creamos un HTML 
+nuevo. En este caso se podría utilizar un único fichero CSS externo que afectaría al mismo 
+tiempo a múltiples páginas HTML. También sería posible incluir el código CSS dentro del 
+mismo fichero HTML, o bien añadir código CSS señalando sólo una parte del texto dentro del 
+mismo HTML o incluso utilizar todas estas tres posibilidades conjuntamente. (lopez 2015, pag. 25) 
+
+1.- Utilizar un fichero CSS externo 
+
+Esta es una de las opciones más comunes, ya que posteriormente es posible utilizar el mismo 
+fichero CSS para aplicar el mismo estilo a otras páginas HTML. De esta manera, cualquier 
+cambio realizado en el diseño afectaría al mismo tiempo a todas las páginas HTML que utilicen 
+dicho fichero CSS. En este caso, por una parte, tendríamos un fichero HTML y un fichero CSS. 
+
+2.- Incluir el código CSS dentro del HTML 
+
+La principal característica de CSS es su flexibilidad y las diferentes opciones que ofrece para 
+realizar una misma tarea. Por ejemplo, para incluir CSS en un documento HTML. 
+
+
+ 
+
+3.-Incluir CSS en el mismo documento HTML 
+
+Los estilos se definen en una zona específica del propio documento HTML. Se emplea la 
+etiqueta <style> de HTML y solamente se pueden incluir en la cabecera del documento (sólo 
+dentro de la sección <head>). 
+
+Ejemplo: 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>Ejemplo de estilos CSS en el propio documento</title> 
+
+<style type="text/css"> 
+
+ p { color: black; font-family: Verdana; } 
+
+</style> 
+
+</head> 
+
+<body> 
+
+<p>Un párrafo de texto.</p> 
+
+</body> 
+
+</html> 
+
+ 
+
+Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren 
+incluir estilos específicos en una determinada página HTML que completen los estilos que se 
+incluyen por defecto en todas las páginas del sitio Web. 
+
+ 3.- Definir CSS en un archivo externo 
+
+En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas 
+HTML enlazan mediante la etiqueta <link>. Un archivo de tipo CSS no es más que un archivo 
+simple de texto cuya extensión es .CSS Se pueden crear todos los archivos CSS que sean 
+necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite. 
+
+Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir 
+los siguientes pasos: 
+
+
+Se crea un archivo de texto y se le añade la 
+iteracion deseada 
+
+Se guarda el archivo de texto con el 
+nombre estilos.css Se debe poner especial atención 
+a que el archivo tenga extensión .css y no .txt 
+
+En la página HTML se enlaza el archivo CSS externo 
+mediante la etiqueta <link>: 
+
+ 
+
+Figura 4-1 Archivo externo de CSS 
+
+ Fuente: Claudio Padrón, David Lasluisa 
+
+ 
+
+ 
+
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>Ejemplo de estilos CSS en un archivo externo</title> 
+
+<link rel="stylesheet" type="text/css" href="/css/estilos.css" media="screen" /> 
+
+</head> 
+
+ 
+
+<body> 
+
+<p>Un párrafo de texto. </p> 
+
+</body> 
+
+</html> 
+
+Cuando el navegador carga la página HTML anterior, antes de mostrar sus contenidos también 
+descarga los archivos CSS externos enlazados mediante la etiqueta <link> y aplica los estilos a 
+los contenidos de la página. 
+
+Normalmente, la etiqueta <link> incluye cuatro atributos cuando enlaza un archivo CSS: 
+
+. rel: indica el tipo de relación que existe entre el recurso enlazado y la página HTML. Para 
+los archivos CSS, siempre se utiliza el valor stylesheet 
+
+
+
+. type: indica el tipo de recurso enlazado. Sus valores están estandarizados y para los archivos 
+CSS su valor siempre es text/css 
+. href: indica la URL del archivo CSS que contiene los estilos. La URL indicada puede ser 
+relativa o absoluta y puede apuntar a un recurso interno o externo al sitio Web. 
+. media: indica el medio en el que se van a aplicar los estilos del archivo CSS. Más adelante se 
+explican en detalle los medios CSS y su funcionamiento. 
+
+
+Con este método, el mantenimiento del sitio Web se simplifica al máximo, ya que un solo 
+cambio en un solo archivo CSS permite variar de forma instantánea los estilos de todas las 
+páginas HTML que enlazan ese archivo. 
+
+Aunque generalmente se emplea la etiqueta <link> para enlazar los archivos CSS externos, 
+también se puede utilizar la etiqueta <style>. La forma alternativa de incluir un archivo CSS 
+externo se muestra a continuación: 
+
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>Ejemplo de estilos CSS en un archivo externo</title> 
+
+<style type="text/css" media="screen"> 
+
+ @import '/css/estilos.css'; 
+
+</style> 
+
+</Head> 
+
+<body> 
+
+<p>Un párrafo de texto. </p> 
+
+</body> 
+
+
+</html> 
+
+En este caso, para incluir en la página HTML los estilos definidos en archivos CSS externos se 
+utiliza una regla especial de tipo @import. Las reglas de tipo @import siempre preceden a 
+cualquier otra regla CSS (con la única excepción de la regla @charset). 
+
+La URL del archivo CSS externo se indica mediante una cadena de texto encerrada con comillas 
+simples o dobles o mediante la palabra reservada url (). De esta forma, las siguientes 
+reglas @import son equivalentes: 
+
+@import '/css/estilos.css'; 
+
+@import "/css/estilos.css"; 
+
+@import url('/css/estilos.css'); 
+
+@import url("/css/estilos.css"); 
+
+4.- Incluir CSS en los elementos HTML 
+
+El último método para incluir estilos CSS en documentos HTML es el peor y el menos 
+utilizado, ya que tiene los mismos problemas que la utilización de las etiquetas <font>. 
+
+Ejemplo: 
+
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>Ejemplo de estilos CSS en el propio documento</title> 
+
+</head> 
+
+<body> 
+
+<p style="color: black; font-family: Verdana;">Un párrafo de texto. </p> 
+
+</body> </html> 
+
+Esta forma de incluir CSS directamente en los elementos HTML solamente se utiliza en 
+determinadas situaciones en las que se debe incluir un estilo muy específico para un solo 
+elemento concreto. 
+
+
+http://mundosica.github.io/tutorial_hispano_jQuery/img/anatomia_basica_css.png 
+
+
+Figura 5-1 Estructura de una Hoja de estilo CSS 
+
+Fuente: http://mundosica.github.io/tutorial_hispano_jQuery/sesion01/index.html 
+
+ 
+
+ 1.2.3. Ventajas 
+
+ 
+
+. Código más sencillo que permite la interpretación adecuada 
+. Mejora los estilos en medios de sonido 
+. Mayores y variadas opciones graficas 
+. Permite el ahorro de tiempo, ya que prepara varias características sin necesidad de un editor, 
+es decir, que todo se puede realizar por medio de códigos. 
+. Todas las ventanas presentadas se resumen en que posibilita un trabajo más rápido dentro de 
+un documento Web, por lo tanto, la carga de los archivos es mucho más veloz. 
+
+
+ 
+
+1.2.4 Inconvenientes 
+
+ 
+
+. CSS es que no es soportada por todos los navegadores, en las versiones inferiores a la 4.0 en 
+Netscape, Internet Explorer 10 o inferior no es soportada. 
+. La no completa estandarización de las CSS en ambos navegadores, pero se espera lograrlo en 
+las versiones 5.x de ambos browsers. 
+
+
+ 
+
+1.3. JQuery 
+
+ 
+
+Es una biblioteca gratuita de JavaScript, que ayuda a simplificar las tareas de creación de 
+páginas Web, funciona en todos los navegadores modernos. Por otro lado, se dice que JQuery 
+ayuda a que nos concentremos de gran manera en el diseño del sitio, al abstraer por completo 
+todas las características específicas de cada uno de los navegadores. Otra de las grandes ventajas 
+de JQuery es que se enfoca en simplificar los scripts y en acceder/modificar el contenido de una 
+
+
+página Web. Finalmente, JQuery agrega una cantidad impresionante de efectos nuevos a 
+JavaScript (LANCKER, El framework JavaScript de la Web 2.0 (2a edición) 2014). 
+
+ 
+
+Principales ventajas de usar JQuery: 
+
+Carga de la página: Configuraciones de la página 
+
+Eventos: Manipular el contenido de la página animación, modificación etc. 
+
+ 
+
+1.3.1 Breve Historia 
+
+ 
+
+Esta breve visión del proyecto JQUERY describe los cambios más significativos de una versión 
+a otra. Fase de desarrollo público: John Resig mencionó por primera vez una mejora en la 
+biblioteca "Behaviour" del prototipo en agosto de 2005. Este nuevo marco de trabajo se lanzó 
+formalmente como JQuery el 14 de enero, 2006. 
+
+ 
+
+. JQuery 1.0 (agosto 2006): Ésta, la primera versión estable de la biblioteca, ya disponía de 
+soporte robusto para selectores CSS, manejadores de evento e interacción AJAX. 
+. JQuery 1.1 (enero 2007): Esta versión simplificaba la API considerablemente, Muchos 
+métodos rara vez utilizados se combinaron, reduciendo el número de métodos a aprender y 
+documentar. 
+
+
+ 
+
+. JQuery 1.1.3 (julio 2007): Esta versión menor contenía importantes mejoras de velocidad 
+para el motor selector de JQuery. A partir de esta versión, el rendimiento de JQuery se 
+compararía favorablemente con las librerías JavaScript semejantes como Prototype, 
+Mootools, y Dojo. 
+
+
+ 
+
+. JQuery 1.2 (septiembre 2007): La sintaxis XPath para seleccionar elementos se eliminó en 
+esta versión, ya que pasaba a ser redundante con la sintaxis CSS. La personalización de 
+efectos pasó a ser mucho más flexible en esta versión, y el desarrollo de plug-ins pasó a ser 
+más sencillo con la incorporación de eventos de espacio de nombre. 
+
+
+ 
+
+. JQuery UI (septiembre 2007): Esta nueva suite de plug-in se anunció para sustituir el plug-in 
+popular, aunque antiguo, Interface. Se incluyó una rica colección de widgets prefabricados, 
+así como un conjunto de herramientas para crear elementos sofisticados como interfaces de 
+arrastrar y soltar. 
+
+
+ 
+
+. JQuery 1.2.6 (mayo 2008): La funcionalidad del popular plug-in Dimensions de Brandon- 
+Aaron se incluyó en la librería principal. 
+
+
+
+ 
+
+JQuery.3 (enero 2009): Una importante revisión del motor selector (Sizzle) proporcionó un gran 
+impulso al rendimiento de la librería. La delegación de evento pasó a soportarse formalmente. 
+
+En la siguiente tabla puede observar más a fondo las versiones y las mejores que ha sufrido 
+JQuery desde su inicio ver (Tabla 2-1). 
+
+ 
+
+Tabla 2-1 Versiones de JQuery 
+
+Fecha de versión 
+
+Número de versión 
+
+Notas adicionales 
+
+ 
+
+ 
+
+ 
+
+26 de agosto de 2006 
+
+1.0 
+
+Primera versión estable 
+
+31 de agosto de 2006 
+
+1.0.1 
+
+ 
+
+9 de octubre de 2006 
+
+1.0.2 
+
+ 
+
+27 de octubre de 2006 
+
+1.0.3 
+
+ 
+
+12 de diciembre de 2006 
+
+1.0.4 
+
+Último arreglo de la versión 1.0 
+
+14 de enero de 2007 
+
+1.1 
+
+ 
+
+22 de enero de 2007 
+
+1.1.1 
+
+ 
+
+27 de febrero de 2007 
+
+1.1.2 
+
+ 
+
+1 de julio de 2007 
+
+1.1.3 
+
+ 
+
+5 de julio de 2007 
+
+1.1.3.1 
+
+ 
+
+24 de agosto de 2007 
+
+1.1.4 
+
+Último arreglo de la versión 1.1 
+
+10 de septiembre de 2007 
+
+1.2 
+
+ 
+
+16 de septiembre de 2007 
+
+1.2.1 
+
+ 
+
+15 de enero de 2008 
+
+1.2.2 
+
+ 
+
+8 de febrero de 2008 
+
+1.2.3 
+
+ 
+
+19 de mayo de 2008 
+
+1.2.4 
+
+ 
+
+21 de mayo de 2008 
+
+1.2.5 
+
+Arreglo por mala construcción 
+de 1.2.4 
+
+24 de mayo de 2008 
+
+1.2.6 
+
+Último arreglo de la versión 1.2 
+
+14 de enero de 2009 
+
+1.3 
+
+Se introduce el motor de 
+selección de Sizzle en el núcleo 
+
+21 de enero de 2009 
+
+1.3.1 
+
+ 
+
+20 de febrero de 2009 
+
+1.3.2 
+
+Último arreglo de la versión 1.3 
+
+14 de enero de 2010 
+
+1.4 
+
+Crean una página Web 
+específica para JQuery 1.4 
+
+25 de enero de 2010 
+
+1.4.1 
+
+ 
+
+19 de febrero de 2010 
+
+1.4.2 
+
+ 
+
+16 de octubre de 2010 
+
+1.4.3 
+
+ 
+
+
+
+
+11 de noviembre de 2010 
+
+1.4.4 
+
+Último arreglo de la versión 1.4 
+
+31 de enero de 2011 
+
+1.5 
+
+Re-escritura del módulo AJAX 
+
+24 de febrero de 2011 
+
+1.5.1 
+
+ 
+
+31 de marzo de 2011 
+
+1.5.2 
+
+Último arreglo de la versión 1.5 
+
+3 de mayo de 2011 
+
+1.6 
+
+ 
+
+12 de mayo de 2011 
+
+1.6.1 
+
+ 
+
+30 de junio de 2011 
+
+1.6.2 
+
+ 
+
+1 de septiembre de 2011 
+
+1.6.3 
+
+ 
+
+12 de septiembre de 2011 
+
+1.6.4 
+
+ 
+
+3 de noviembre de 2011 
+
+1.7 
+
+Añadidas las funciones .on() y 
+.off() 
+
+ 
+
+ 
+
+Mejor soporte 
+de HTML5 para IE6/7/8 
+
+ 
+
+ 
+
+Soporte para AMD 
+(Asynchronous Module 
+Definition) 
+
+21 de noviembre de 2011 
+
+1.7.1 
+
+ 
+
+21 de marzo de 2012 
+
+1.7.2 
+
+ 
+
+9 de agosto de 2012 
+
+1.8 
+
+ 
+
+30 de agosto de 2012 
+
+1.8.1 
+
+ 
+
+20 de septiembre de 2012 
+
+1.8.2 
+
+ 
+
+13 de noviembre de 2012 
+
+1.8.3 
+
+ 
+
+1 de enero de 2013 
+
+1.9 
+
+Simplificación de la API 
+
+ 
+
+ 
+
+Mejorado el soporte para CSS3 
+
+ 
+
+ 
+
+Soporte para Source map7 
+
+ 
+
+ 
+
+Solucionados varios bugs. 
+
+30 de Mayo de 2013 
+
+1.10.1 
+
+Soluciona bug grave de la 
+versión 1.9 
+
+24 de enero de 2014 
+
+1.11 
+
+Velocidad de procesamiento 
+aumentada 
+
+ 
+
+ 
+
+Cambios a nivel de publicación 
+de JQuery 
+
+ 
+
+ 
+
+Modularidad definida por AMD 
+
+ 
+
+ 
+
+Eliminados layouts forzados 
+
+
+
+ Realizado por: Claudio Padrón y David Lasluisa 
+
+ 
+
+
+ 1.3.2 Ventajas 
+
+ 
+
+Selección de elementos DOM. 
+
+Interactividad y modificaciones del árbol DOM, incluyendo soporte para CSS 1-3 y un plugin 
+básico de XPath. 
+
+Eventos. 
+
+. Manipulación de la hoja de estilos CSS. 
+. Efectos y animaciones. 
+. Animaciones personalizadas. 
+. AJAX. 
+. Soporta extensiones. 
+. Utilidades varias como obtener información del navegador, operar con objetos y vectores, 
+funciones para rutinas comunes, etc. 
+. Compatible con los navegadores Mozilla Firefox 2.0+, Internet Explorer 6+, Safari 3+, 
+Opera 10.6+ y Google Chrome 8+.5 
+
+
+ 
+
+1.3.3 Inconvenientes 
+
+ 
+
+Una de las principales desventajas de JQuery es la gran cantidad de versiones publicadas en el 
+corto tiempo. No importa si usted está corriendo la última versión de JQuery, usted tendrá que 
+subir al host la librería usted mismo (y actualizarla constantemente), o descargar la librería 
+desde Google (atractivo, pero puede traer problemas de incompatibilidad con el código). 
+
+Además del problema de las versiones, otras desventajas que podemos mencionar: 
+
+JQuery es fácil de instalar y aprender, inicialmente. Pero no es tan fácil si lo comparamos con 
+CSS 
+
+Si JQuery es implementado inapropiadamente como un Framework, el entorno de desarrollo se 
+puede salir de control. 
+
+ 
+
+1.3.4 Funcionalidades de Jquery 
+
+ 
+
+JQuery nos permite agregar efectos y funcionalidades complejas a nuestro sitio Web, como, por 
+ejemplo: galerías de fotos dinámicas y elegantes, validación de formularios, calendarios, hacer 
+aparecer y desaparecer elementos en nuestra página y muchas otras poderosas opciones. Otra 
+ventaja sin duda es la posibilidad que nos brinda de trabajar con AJAX, sin preocuparnos de los 
+detalles complejos de la programación. Dado que JQuery es totalmente compactible con la 
+mayoría de los exploradores, no necesitamos preocuparnos por los asuntos de compactibilidad, 
+JQuery lo hace automáticamente. 
+
+
+ 
+
+1.3.5 Sintaxis de JQuery 
+
+ 
+
+ Las declaraciones, nombres, espacios en blanco, y otras sintaxis son las mismas que las de 
+JavaScript. 
+
+Declaración simple de variable 
+
+var foo = 'hello world'; 
+
+Los espacios en blanco no tienen valor fuera de las comillas 
+
+var foo ='hello world'; 
+
+Los paréntesis indican prioridad 
+
+2 * 3 + 5; // es igual a 11; la multiplicación ocurre primero 
+
+2 * (3 + 5); // es igual a 16; por lo paréntesis, la suma ocurre primero 
+
+La tabulación mejora la lectura del código, pero no posee ningún significado especial 
+
+var foo = function() { 
+
+ console.log('hello'); 
+
+}; (Puig 2014). 
+
+Ejemplo 
+
+Un ejemplo utilizando JQuery, en el cual al momento de hacer clic en el enlace se activa todo el 
+proceso de JQuery y nos muestra en pantalla un alert avisando que presionamos el enlace 
+
+ 
+
+ <script src="scripts/JQuery.js" type="text/JavaScript"> < /script> 
+
+ <script type="text/JavaScript"> $(document). ready (function () { 
+
+ //Aquí asignamos el clic al elemento (enlace) 
+
+ $("a"). on ("click", function () alert ("Personate un enlace");});}); 
+
+ </script> 
+
+ 
+
+Selección de elementos 
+
+El concepto más básico de JQuery es el de "seleccionar algunos elementos y realizar 
+acciones con ellos". La biblioteca soporta gran parte de los selectores CSS3 y varios más no 
+estandarizados. En api.JQuery.com/category/selectors se puede encontrar una completa 
+referencia sobre los selectores de la biblioteca. 
+
+ 
+
+A continuación, se muestran algunas técnicas comunes para la selección de elementos: 
+
+ 
+
+Selección de elementos en base a su id 
+
+ 
+
+$('#myId'); // notar que los IDS deben ser únicos por página 
+
+
+Selección de elementos en base al nombre de clase 
+
+ 
+
+$('div.myClass'); // si se especifica el tipo de elemento, 
+
+ // se mejora el rendimiento de la selección 
+
+Selección de elementos por su atributo 
+
+ 
+
+$('input[name=first_name]'); // tenga cuidado, que puede ser muy lento 
+
+Selección de elementos en forma de selector CSS 
+
+ 
+
+$('#contents ul.people li'); 
+
+Pseudo-selectores 
+
+ 
+
+// selecciona el primer elemento <a> con la clase 'external' 
+
+$('a.external:first'); 
+
+ 
+
+// selecciona todos los elementos <tr> impares de una tabla 
+
+$('tr:odd'); 
+
+ 
+
+// selecciona todos los elementos del tipo input dentro del formulario #myForm 
+
+$('#myForm :input'); 
+
+ 
+
+// selecciona todos los diy visibles 
+
+$('div:visible'); 
+
+ 
+
+// selecciona todos los diy excepto los tres primeros 
+
+$('div:gt(2)'); 
+
+ 
+
+// selecciona todos los diy actualmente animados 
+
+$('div:animated'); 
+
+NOTA Cuando se utilizan los pseudo-selectores :visible y :hidden, JQuery comprueba la 
+visibilidad actual del elemento pero no si éste posee asignados los estilos CSS visibility o 
+display — en otras palabras, verifica si el alto y ancho físico del elemento es mayor a cero. 
+Sin embargo, esta comprobación no funciona con los elementos <tr>; en este caso, JQuery 
+comprueba si se está aplicando el estilo display y va a considerar al elemento como oculto si 
+posee asignado el valor none. Además, los elementos que aún no fueron añadidos al DOM 
+serán tratados como ocultos, incluso si tienen aplicados estilos indicando que deben ser 
+
+
+visibles (En la sección Manipulación de este manual, se explica cómo crear y añadir 
+elementos al DOM). 
+
+Como referencia, este es el fragmento de código que utiliza JQuery para determinar cuándo 
+un elemento es visible o no. Se incorporaron los comentarios para que quede más claro su 
+entendimiento: 
+
+ 
+
+JQuery.expr.filters.hidden = function( elem ) { 
+
+ var width = elem.offsetWidth, height = elem.offsetHeight, 
+
+ skip = elem.nodeName.toLowerCase() === "tr"; 
+
+ 
+
+ // ¿el elemento posee alto 0, ancho 0 y no es un <tr>? 
+
+ return width === 0 && height === 0 && !skip ? 
+
+ 
+
+ // entonces debe estar oculto (hidden) 
+
+ true : 
+
+ 
+
+ // pero si posee ancho y alto y no es un <tr> 
+
+ width > 0 && height > 0 && !skip ? 
+
+ 
+
+ // entonces debe estar visible 
+
+ false : 
+
+ 
+
+ // si nos encontramos aquí, es porque el elemento posee ancho 
+
+ // y alto, pero además es un <tr>, 
+
+ // entonces se verifica el valor del estilo display 
+
+ // aplicado a través de CSS 
+
+ // para decidir si está oculto o no 
+
+ JQuery.curCSS(elem, "display") === "none"; 
+
+}; 
+
+ 
+
+JQuery.expr.filters.visible = function( elem ) { 
+
+ return !JQuery.expr.filters.hidden( elem ); 
+
+}; 
+
+ 
+
+Elección de selectores 
+
+La elección de buenos selectores es un punto importante cuando se desea mejorar el 
+rendimiento del código. Una pequeña especificidad — por ejemplo, incluir el tipo de 
+
+
+elemento (como div) cuando se realiza una selección por el nombre de clase — puede 
+ayudar bastante. Por eso, es recomendable darle algunas "pistas" a JQuery sobre en qué 
+lugar del documento puede encontrar lo que desea seleccionar. Por otro lado, demasiada 
+especificidad puede ser perjudicial. Un selector como #miTabla thead tr th.especial es un 
+exceso, lo mejor sería utilizar #miTabla th.especial. 
+
+JQuery ofrece muchos selectores basados en atributos, que permiten realizar selecciones 
+basadas en el contenido de los atributos utilizando simplificaciones de expresiones 
+regulares. 
+
+// Encontrar todos los <a> cuyo atributo rel terminan en "thinger" 
+
+$("a[rel$='thinger']"); 
+
+Estos tipos de selectores pueden resultar útiles, pero también ser muy lentos. Cuando sea 
+posible, es recomendable realizar la selección utilizando IDs, nombres de clases y nombres 
+de etiquetas. 
+
+Cuando se realiza una selección utilizando $(), siempre es devuelto un objeto, y si se lo 
+evalúa, éste siempre devolverá true. Incluso si la selección no contiene ningún elemento, el 
+código dentro del bloque if se ejecutará. (LANCKER, Los API JavaScript de HTML5 2013) 
+
+ 
+
+1.4 PRIME FACES 
+
+ 
+
+Es una librería de componentes visuales para java Server Faces (JSF), de código abierto que 
+cuenta con gran cantidad de componentes que facilitan la creación de las aplicaciones Web. 
+PRIME FACES es de origen turco, desarrollada por prime Technology baja la licencia de 
+Apache License V2, soporte nativo de Ajax además posee un kit de aplicaciones para móviles. 
+
+PRIME FACES cuenta con un conjunto de 117 componentes (http://www.PRIME FACES 
+.org/showcase/ui/home.jsf) que incluyen, además del conjunto estándar de componentes 
+también otros extras como HtmlEditors, Charts, date schedule y un exportador de datos a Excel, 
+Pdf, Word entre otros. 
+
+Este componente está desarrollado en Java Script con sus respectivos, widgets, plugins, temas y 
+posee interacciones desarrolladas en Ajax. En PRIME FACES es más fácil cambiar la 
+apariencia ya que se basa en ThemeRoller. Posee más temas que sus rivales directos RichFaces 
+y ICEfaces. 
+
+PRIME FACES (http://code.google.com/p/PRIME FACES -extensions/), que es un proyecto de 
+open source licenciado bajo licencia Apache v2. Se puede utilizar completamente libre en 
+proyectos de open source o comerciales en los términos de la licencia.(Hispano 2015) 
+
+Una gran diferencia en comparación con productos de proveedores es que utilizamos PRIME 
+FACES en todos los proyectos de nuestros clientes como el marco frontal. Esto nos ayuda a ver 
+el proyecto desde el punto de vista de un desarrollador. 
+
+
+http://www.primefaces.org/images/devrates.png 
+Simplicidad y Rendimiento 
+
+ 
+
+PRIME FACES es una biblioteca ligera, todas las decisiones tomadas se basan en mantener 
+PRIME FACES lo más ligero posible. Por lo general, la adición de una solución de terceros 
+podría traer una sobrecarga, sin embargo, este no es el caso con PRIME FACES. 
+
+ Facilidad de uso 
+
+Componentes en PRIME FACES se desarrollan con un principio de diseño que establece que 
+"Un buen componente de interfaz de usuario debe ocultar la complejidad, pero mantener la 
+flexibilidad" mientras lo hace. 
+
+Fuerte Comunidad Comentarios 
+
+Comunidad PRIME FACES ayuda continuamente el desarrollo de PRIME FACES, 
+proporcionando información, nuevas ideas, informes de errores y parches. 
+
+Aplicaciones de la primavera 
+
+Si está usando Spring Framework y en busca de un marco frontal JSF, entonces su búsqueda ha 
+terminado como Spring Source sugiere PRIME FACES para ser utilizado en aplicaciones JSF-
+Spring. También Primavera ROO sólo admite PRIME FACES en addon JSF. Tenga en cuenta 
+que PRIME FACES es un marco de interfaz de usuario y no se acopla con un marco 
+middleware como Spring, EJB o similar. 
+
+Número uno en DevRates 
+
+Según DevRates.com , PRIME FACES ha tomado la delantera con calificación global de 9,4 
+(en el momento de la escritura) como marco de favorito de los desarrolladores para crear 
+interfaces de usuario con java. 
+
+ 
+
+Figura 6-1 Competidores PRIME FACES 
+
+Fuente: http://dspace.ucacue.edu.ec/bitstream/reducacue/6142/1/Trabajo%20Teorico%20Practico.pdf 
+
+ 
+
+Miles de aplicaciones han sido creadas con PRIME FACES, incluso productos como 
+competir Ice Faces está activada por PRIME FACES. 
+
+A continuación, se presenta un gráfico generado por Google Trends comparando los 
+PRIME FACES popularidad con los competidores. Para muchos, PRIME FACES es el 
+estándar de facto de JSF bibliotecas de componentes. 
+
+
+http://www.primefaces.org/images/all.png 
+
+
+Figura 7-1 Tendencias de google trend en librerías java server faces 
+
+Fuente: http://dspace.ucacue.edu.ec/bitstream/reducacue/6142/1/Trabajo%20Teorico%20Practico.pdf 
+
+ 
+
+1.5 Dominio 
+
+ 
+
+Un dominio de Internet es una red de Identificación asociada a un grupo de Dispositivos o 
+equipos conectados a la red Internet. El propósito principal de los nombres de Dominio en 
+Internet y del sistema de nombres de dominio (DNS), es traducir las direcciones IP de cada 
+nodo activo en la red, a términos memorizables y fáciles de encontrar. Esta abstracción hace 
+posible que cualquier servicio (de red) pueda moverse de un lugar geográfico a otro en la Rrd 
+Internet, aun cuando el cambio implique que tendrá una dirección IP diferente. Sin la ayuda del 
+sistema de nombres de dominio, los usuarios de Internet tendrían que acceder a cada servicio 
+Web utilizando la dirección IP del nodo (por ejemplo, sería necesario utilizar http://192.0.32.10 
+en vez de http://ejemplo.com). Además, reduciría el número de Webs posibles, ya que 
+actualmente es habitual que una misma dirección IP sea compartida por varios dominios. 
+
+¿Para qué sirve un dominio? 
+
+Un nombre de dominio sirve para dar una identidad a tu sitio Web o negocio en la red el nombre 
+de dominio te da un nombre y una terminación para que el cliente le sea más fácil el acceso al 
+sitio Web. 
+
+En la actualidad existe una amplia variedad de terminaciones de dominio ejemplo: 
+
+.ar, para servicios de Argentina 
+
+.asia, la región de Asia 
+
+.biz prevista para ser usado por negocios. 
+
+.bo, para servicios de Bolivia 
+
+
+.cat, para páginas relacionadas con la cultura e idioma catalán. 
+
+.cl, para servicios de Chile 
+
+.co, para servicios de Colombia 
+
+.cn, para servicios de China 
+
+.com, son los dominios más extendidos en el mundo. Sirven para cualquier tipo de página Web, 
+temática. 
+
+.cr, para servicios de Costa Rica 
+
+.cu, para servicios de Cuba 
+
+.do, para servicios de República Dominicana 
+
+.ec, para servicios de Ecuador 
+
+.edu, para servicios de Educación 
+
+.es, para servicios de España 
+
+.eu, para países de Europa 
+
+.fm, para páginas del país Estados Federados de Micronesia, pero usado también para estaciones 
+de radio 
+
+.fr, para servicios de Francia 
+
+.gov y. gob, para gobierno y entidades públicas 
+
+.gt, para servicios de Guatemala 
+
+.hn, para servicios de Honduras 
+
+.info, para información 
+
+.int, para entidades internacionales, organizaciones como la ONU 
+
+.jobs, para departamentos de empleo y recursos humanos en empresas 
+
+.lat, la región de Latinoamérica 
+
+.lu, para servicios de Luxemburgo 
+
+.me, para servicios de Montenegro 
+
+.mil, para el Departamento de Defensa de los Estados Unidos 
+
+.mobi, para empresas de telefonía móvil o servicios para móvil. 
+
+.museum, para los museos 
+
+.mx, para servicios de México 
+
+ 
+
+1.6 Web Hosting 
+
+ 
+
+Hosting es el espacio físico dentro de un computador donde se almacena el sitio Web, correos u 
+otro tipo de información accesible las 24 horas del día por parte de los usuarios. 
+
+El Web Hosting (hospedaje Web) es el servicio que provee a los usuarios de Internet un sistema 
+para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía Web y 
+
+
+el dominio es una forma de enmascarar una dirección IP fija. De este modo es más fácil hallar 
+un nombre que un número. 
+
+Inicialmente el Web hosting gratuito cubre las necesidades de muchas personas o pequeñas 
+empresas. Sin embargo, una vez un sitio Web se va posicionando, se vuelve popular y recibe 
+una mayor cantidad de visitas, la opción de alojamiento Web gratuito no es la mejor opción, 
+especialmente si tu sitio Web maneja el comercio electrónico. 
+
+ 
+
+1.6.1 Ventajas: 
+
+. Control total del Website: Puedes decidir en cuanto al programa o software para construir 
+tú página y su contenido es de tu propiedad. 
+. Dominio propio: Puedes escoger tu nombre de dominio que sea relacionado con tu actividad 
+o nombre de negocio y que sea fácil de recordar 
+. Apariencia profesional: La página no va a tener un nombre o URL largo para entrar y no va 
+a tener publicidades de terceros. 
+. Aumentar funciones en la página: Ya no tienes que pagar para tener acceso a otros 
+servicios o instalar más funcionalidad a tu página, como galerías, formularios, videos, 
+widgets, etc. 
+. Tus emails personalizados: Envía y recibe correos sin usar servicios gratuitos como 
+Hotmail y Yahoo! para comunicarte con tus clientes. 
+. En línea permanentemente: Al crear una página Web con tu propio hosting y dominio 
+contratado, no vas a tener interrupciones del servicio, solamente tienes que pagar una vez al 
+año por este servicio. 
+. Soporte técnico: La compañía de hosting o el diseñador Web que te creo la página te va a 
+ayudar con problemas técnicos que tengas con la página. 
+. Mejor ranking en los buscadores: Una página Web creada profesionalmente esta mejor 
+ubicada en google y Yahoo!, con lo cual vas a tener más visitas y por consiguiente más 
+ventas. 
+
+
+1.6.2 Desventajas: 
+
+. Genera costos porque al adquirir servicios de empresas proveedoras de Hosting gratuitos 
+poco a poco van restringiendo los servicios que ofrecen, que a priori no pueden suponer un 
+problema, pero a medida que nuestra web avanza comenzaría a notarse la falta la cual 
+involucraría nuevos gastos para el usuario. 
+
+
+
+. Para obtener un producto de buena calidad se debería invertir un dinero extra. Cuando se 
+trata de Web hosting esto puede ser muy cierto ya que los servicios de hosting gratuitos son 
+Ideales para sitios pequeños que van empezando y por tanto no requieren muchos requisitos 
+por la poca cantidad de tráfico de visitas que estos van a tener. Y es la mejor opción sin 
+invertir en algo que se obtendría un beneficio a corto, mediano o largo plazo. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+CAPITULO II 
+
+ 
+
+ 
+
+2. “ANÁLISIS COMPARATIVO ENTRE HTML5 Y PRIME FACES PARA EL 
+DESARROLLO DE APLICACIONES WEB. CASO APLICATIVO 
+PATRONATO DE ACCIÓN SOCIAL “NUESTRA SEÑORA DEL MONTE””. 
+
+
+2.1. Introducción 
+
+ 
+
+La necesidad de determinar la mejor tecnología de desarrollo de aplicaciones Web modernas, 
+requiere un análisis en base a parámetros que faciliten la comparación entre las dos tecnologías. 
+
+En este capítulo se implementará dos prototipos con las tecnologías de estudio HMTL5 y 
+PRIME FACES, esto servirá para determinar los parámetros para la comparación, establecer los 
+parámetros para determinar la eficiencia de las dos tecnologías, realizar un análisis en base a los 
+parámetros establecidos y obtener un resultado de la comparación. 
+
+ 
+
+2.2. Construcción de Prototipos 
+
+ 
+
+Para la demostración de los parámetros se desarrolló un mismo prototipo con las dos 
+tecnologías, que cumplen las siguientes tareas: 
+
+ 
+
+. Insertar los datos de un médico. 
+. Modificar los datos de un médico. 
+. Eliminar los datos del médico. 
+
+
+ 
+
+2.3. Prototipo con HTML5 
+
+ 
+
+ 
+
+Este prototipo fue desarrollado utilizando las nuevas etiquetas semánticas, y los nuevos 
+elementos de formularios, atributos. 
+
+ 
+
+Objetivo 
+
+ 
+
+El objetivo de este estudio es obtener valores referentes a la facilidad de personalizar el código, 
+usabilidad, número de líneas de código y la curva de aprendizaje tanto del desarrollador y del 
+usuario, valores que servirán para medir la eficiencia de la tecnología para el desarrollo 
+de aplicaciones Web. 
+
+ 
+
+ 
+
+. Insertar los datos de un médico. 
+
+
+
+. Modificar los datos de un médico. 
+. Eliminar los datos del médico. 
+. Crear un menú. 
+
+
+ 
+
+2.4. Prototipo con PRIME FACES 
+
+ 
+
+Este prototipo fue desarrollado con los componentes propios de PRIME FACES, y que para el 
+despliegue en el navegador Web se necesita tener instalado el plugin de java y para el caso de 
+reproducción de videos el plugin de flash player caso contrario no se visualizará la aplicación. 
+
+ 
+
+Objetivo 
+
+ 
+
+El objetivo de este estudio es obtener valores referentes a la facilidad de personalizar el código, 
+usabilidad, número de líneas de código y la curva de aprendizaje tanto del desarrollador y del 
+usuario, valores que servirán para medir la eficiencia de la tecnología para el desarrollo 
+de aplicaciones Web para lo cual se implementó las siguientes pantallas. 
+
+. Insertar los datos de un médico. 
+. Modificar los datos de un médico. 
+. Eliminar los datos del médico. 
+
+
+ 
+
+2.5. Definición De Los Criterios De Comparación 
+
+ 
+
+En la tabla 3-2 se muestra la lista de criterios, parámetros, indicadores y herramientas que 
+permitirán establecer la comparación de la eficiencia entre las tecnologías HTML5 y PRIME 
+FACES para el desarrollo de Aplicaciones Web, los mismos que han sido establecidos según 
+los criterios de los autores de la tesis. 
+
+ 
+
+Criterio Despliegue 
+
+ 
+
+El criterio despliegue está relacionado con la publicación o instalación del prototipo terminado. 
+Los indicadores que corresponde a este criterio son: Peso de la página Web, Tiempo de carga de 
+la página Web. Las herramientas a utilizar para medir los indicadores serán IDE de desarrollo 
+Netbeans y Cloudmonitor. 
+
+ 
+
+Criterio Desarrollo 
+
+ 
+
+El criterio desarrollo está relacionado con la implementación del prototipo desde el punto de 
+vista del desarrollador los indicadores que corresponde a este criterio son: Número de líneas de 
+código para la consecución de una tarea específica y Cantidad de recursos usados (memoria 
+
+
+Ram, Cpu, Red). Las herramientas que se usarán para medir dichos indicadores serán IDE de 
+desarrollo Netbeans y la Herramienta de rendimiento de Windows ver tabla (3-2) 
+
+ 
+
+Tabla 3-2 Criterios de comparación. 
+
+N° 
+
+CRITERIO 
+
+PARÁMETRO 
+
+INDICADORES 
+
+HERRAMIENTAS 
+
+1 
+
+despliegue 
+
+kilobytes 
+
+peso del módulo 
+MÉDICO ingresar 
+modificar eliminar 
+datos 
+
+IDE interfaz de desarrollo 
+(netbeans) 
+
+2 
+
+desarrollo 
+
+líneas de código 
+
+número de líneas de 
+código para la 
+consecución de un tarea 
+especifica 
+
+ide interfaz de desarrollo 
+(netbeans) 
+
+4 
+
+despliegue 
+
+rapidez 
+
+tiempo de carga de la 
+interfaz del módulo 
+peso del módulo 
+MÉDICO ingresar 
+modificar eliminar 
+datos 
+
+cloudmonitor 
+
+3 
+
+despliegue 
+
+eficiencia 
+
+cantidad de recursos 
+usados (memoria ram, 
+cpu, red) 
+
+herramienta de 
+rendimiento de Windows 
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón. 
+
+ 
+
+ 
+
+2.6. Parámetros De Evaluación 
+
+ 
+
+2.6.1 Peso del módulo MÉDICO kB 
+
+ 
+
+La página Web tiene que poderse visualizar completamente en un plazo no mayor de 10 
+segundos ya que estudios han demostrado que si se pasa de los 10 segundos el usuario 
+abandonará la página (usabilidad.tv © 2000 - 2015 ), la mayoría de los usuarios tiene acceso a la 
+Web mediante la tecnología ADSL. Como referencia se ha tomado en consideración los 
+siguientes valores de descarga para una conexión con tecnología ADSL que es la más usada en 
+hogares ver tabla (4-2) que indica el tiempo en que se demora en cargar una página en el 
+navegador medidor en Kb y en la tabla (5-2) nos indica la escala cuantitativa para el indicador 
+Peso de la página Web determinado en kB. 
+
+ 
+
+ 
+
+Tabla 4-2 Conexión tecnología ADSL 
+
+SISTEMA DE CONEXIÓN 
+
+KBPS TIEMPO 1 
+SEGUNDO 
+
+KBPS TIEMPO 10 
+SEGUNDO 
+
+ADSL 
+
+6 KB 
+
+110 KB 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+
+Tabla 5-2 Peso de Pagina Web 
+
+CUANTITATIVA 
+
+3 
+
+2 
+
+1 
+
+PESO EN KB 
+
+<= 110 KB 
+
+120 KB – 250 KB 
+
+>= 250 KB 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+En la tabla 6-2 se muestra la escala de Valoración para el peso de una página Web. 
+
+ 
+
+ 
+
+ 
+
+Tabla 6-2 Valoración del peso de una página Web 
+
+CUALITATIVA 
+
+ 
+
+3 
+
+2 
+
+1 
+
+ESCALA 
+
+ 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+PESADA 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+2.6.2 Número de líneas de código 
+
+ 
+
+En la tabla 7-2 se muestra la escala Cuantitativa para el indicador Número de líneas de código 
+medido en cantidad de líneas de código. 
+
+ 
+
+ 
+
+Tabla 7-2 Líneas de código 
+
+PORCENTAJE 
+
+70 – 80% 
+
+81% - 90% 
+
+91 - 100% 
+
+CUANTITATIVA 
+
+3 
+
+2 
+
+1 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+2.6.3 Tiempo de carga de la página Web 
+
+En la tabla 8-2 muestra la escala Cuantitativa para el indicador de Tiempo de carga de la página 
+Web. 
+
+ 
+
+Tabla 8-2 Tiempo de carga 
+
+CUANTITATIVA 
+
+3 
+
+2 
+
+1 
+
+TIEMPO 
+
+<= 5 SEGUNDOS 
+
+5 – 6 SEGUNDOS 
+
+>= 7 SEGUNDOS 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+En la tabla (9-2) se muestra la escala de Valoración para el peso de una página Web 
+
+ 
+
+ 
+
+Tabla 9-2 Valoración del peso 
+
+CUALITATIVA 
+
+3 
+
+2 
+
+1 
+
+TIEMPO 
+
+RÁPIDA 
+
+PARCIALMENTE 
+LENTA 
+
+LENTA 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+
+ 
+
+2.6.4. Cantidad de recursos usados 
+
+En las siguientes tablas (10-2, 11-2, 12-2, 13-2) se muestras las escalas Cuantitativas a ser 
+utilizadas para los diferentes indicadores utilizados como para la medición de los recursos. 
+
+ 
+
+2.6.5. Porcentaje de uso del Procesador 
+
+ 
+
+Tabla 10-2 Porcentaje de uso del procesador 
+
+PORCENTAJE DE PROCESADOR USADO 
+
+VALORACIÓN CUANTITATIVA 
+
+3 
+
+2 
+
+PORCENTAJE DE USO 
+
+0 - 2% 
+
+> 3% 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+2.6.6 Cantidad de Memoria RAM usada expresada en KB 
+
+ 
+
+Tabla 11-2 Cantidad de Memoria RAM usada 
+
+CANTIDAD DE MEMORIA RAM USADA KB 
+
+VALORACIÓN CUANTITATIVA 
+
+3 
+
+2 
+
+PORCENTAJE DE USO 
+
+<= 52000 KB 
+
+> 53000 KB 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+2.6.7. Cantidad de disco duro usado expresado en Kb 
+
+ 
+
+Tabla 12-2 Cantidad de disco duro usado 
+
+CANTIDAD DE DISCO DURO USADO KB 
+
+VALORACIÓN CUANTITATIVA 
+
+3 
+
+2 
+
+PORCENTAJE DE USO 
+
+<= 150 KB 
+
+> 100 KB 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+2.6.8 Ancho de banda usado expresado en bps 
+
+ 
+
+Tabla 13-2 Cantidad de Ancho de banda 
+
+ANCHO DE BANDA OCUPADO EN BPS 
+
+VALORACIÓN CUANTITATIVA 
+
+3 
+
+2 
+
+PORCENTAJE DE USO 
+
+<= 110000BPS 
+
+> 200000BPS 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+2.7. Análisis De Los Parámetros De Comparación 
+
+ 
+
+Este análisis se fundamentará en la información recopilada mediante la investigación 
+bibliográfica que se realizó, así como la observación que se llevará a cabo en el prototipo que ha 
+
+
+sido desarrollado con cada una de las tecnologías por parte de los autores de la tesis. Los 
+parámetros de eficiencia se los clasificó de acuerdo a dos criterios: criterio despliegue, criterio 
+desarrollo. 
+
+ 
+
+2.8. Peso del módulo Médico determinado en kB 
+
+ 
+
+Para realizar este análisis se ha tomado en consideración el prototipo del módulo médico con 
+sus respectivas acciones como son: Ingresar, Modificar, Eliminar datos de un médico. 
+
+En la tabla (14-2), se muestra la escala cuantitativa para el indicador, peso de la página Web 
+determinado en kB. Se muestra la escala de valoración para una página Web. Tomado estos 
+parámetros en consideración se obtuvieron los siguientes resultados: 
+
+ 
+
+Tabla 14-2 Resultados del Peso del módulo Médico Valoración Cuantitativa y Cualitativa 
+
+PESO DEL MODULO MÉDICO 
+
+ 
+
+Tecnologías 
+
+VALORACIÓN 
+CUANTITATIVA 
+
+VALORACIÓN 
+CUALITATIVA 
+
+ACCIONES MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS DEL 
+MÉDICO 
+
+67 
+
+200 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+MODIFICAR DATOS 
+DEL MÉDICO 
+
+65 
+
+190 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+ELIMINAR DATOS DEL 
+MÉDICO 
+
+54 
+
+160 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+Promedio total 
+
+186 
+
+550 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+En la tabla (15-2) se puede observar los resultados obtenidos luego del análisis respectivo del 
+peso del módulo médico expresado en Kb. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Tabla 15-2 Resultados del Peso del Módulo Médico expresado en porcentajes 
+
+PESO DEL MODULO MÉDICO 
+
+ 
+
+TECNOLOGÍAS 
+
+DIFERENCIA DE 
+KB 
+
+DIFERENCIA ENTRE LAS DOS 
+TECNOLOGÍAS EXPRESADA EN 
+PORCENTAJES 
+
+ACCIONES 
+MODULO MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS 
+DEL MÉDICO 
+
+67 
+
+200 
+
+-133 
+
+133 
+
+33,50% 
+
+100% 
+
+MODIFICAR DATOS 
+DEL MÉDICO 
+
+65 
+
+190 
+
+-125 
+
+125 
+
+34,21% 
+
+100% 
+
+ELIMINAR DATOS 
+DEL MÉDICO 
+
+54 
+
+160 
+
+-106 
+
+106 
+
+33,75% 
+
+100% 
+
+PROMEDIO TOTAL 
+
+ 
+
+ 
+
+ 
+
+ 
+
+33,82% 
+
+100% 
+
+
+
+ 
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Esta información expresada en forma gráfica y en porcentajes quedaría de la siguiente manera 
+ver gráficos (8-2) (9-2). 
+
+
+0,00%
+
+20,00%
+
+40,00%
+
+60,00%
+
+80,00%
+
+100,00%
+
+120,00%
+
+INGRESAR DATOS DEL MEDICO
+
+MODIFICAR DATOS DEL MEDICO
+
+ELIMINAR DATOS DEL MEDICO
+
+Promedio total
+
+Porcetaje 
+
+Diferencia expresada en porcentaje 
+
+HTML5
+
+PRIMEFACES
+
+0
+
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+INGRESAR DATOS DEL
+
+MEDICO
+
+MODIFICAR DATOS DEL
+
+MEDICO
+
+ELIMINAR DATOS DEL
+
+MEDICO
+
+Promedio total
+
+Kilobites 
+
+Diferencia en Kb 
+
+HTML5
+
+PRIMEFACES
+
+ 
+
+ 
+
+ Figura 8-2 Resultados en forma gráfica expresada en porcentaje 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+ 
+
+ Figura 9-2 Resultados en forma gráfica Diferencia en Kb 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+
+Luego de los resultados obtenidos se puede concluir que La diferencia de peso expresada en Kb 
+para el modulo correspondiente al médico es de 370 Kb lo que representa un 66.18% menos Kb 
+en HTML5 que al usar la tecnología PRIMEFACES. En el desarrollo del módulo médico se 
+obtuvo los siguientes resultados que transformados a una escala cuantitativa se tiene los 
+siguientes valores ver tabla (16-2) 
+
+ 
+
+Tabla 16-2 Resultados del módulo médico transformados a una escala cuantitativa 
+
+PESO DEL MODULO MÉDICO 
+
+ 
+
+TECNOLOGÍAS 
+
+VALORACIÓN 
+CUANTITATIVA 
+
+VALORACIÓN 
+CUALITATIVA 
+
+ACCIONES MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS DEL 
+MÉDICO 
+
+67 
+
+200 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+MODIFICAR DATOS 
+DEL MÉDICO 
+
+65 
+
+190 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+ELIMINAR DATOS DEL 
+MÉDICO 
+
+54 
+
+160 
+
+3 
+
+2 
+
+LIGERA 
+
+PARCIALMENTE 
+PESADA 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+En la cual podemos concluir que HTML5 en las diferentes acciones del módulo médico tiene 
+una valoración de Ligero mientras que PRIME FACES tiene una valoración de parcialmente 
+pesada. Basado en los parámetros indicados en la tabla anteriormente. 
+
+ 
+
+2.9. Número de líneas de código 
+
+ 
+
+Para realizar este análisis se ha tomado en consideración el prototipo del módulo MÉDICO con 
+sus respectivas acciones como son: Ingresar, Modificar, Eliminar datos de un médico y las 
+líneas de código utilizadas para realizar una tarea específica Ingresar, Modificar y Eliminar 
+datos de un médico para lo cual se ha tomado en consideración HTML5 con sus diferentes 
+componentes, como lenguaje de marcado Css3 y JQuery, y del otro lado tenemos PRIME 
+FACES con sus componentes JavaScript, Ajax y sus diferentes librerías. En la siguiente tabla 
+(17-2), se puede observar las diferencias de líneas de código para realizar una tarea. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+Tabla 17-2 Líneas de Código para el módulo médico 
+
+LÍNEAS DE CÓDIGO PARA EL MODULO MÉDICO 
+
+ 
+
+NÚMEROS DE 
+LÍNEAS DE CÓDIGO 
+
+DIFERENCIA DE 
+LÍNEAS DE CÓDIGO 
+
+DIFERENCIA EXPRESADA 
+EN PORCENTAJES 
+
+ACCIONES MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS 
+DEL MÉDICO 
+
+280 
+
+350 
+
+-70 
+
+70 
+
+80,00% 
+
+100% 
+
+MODIFICAR DATOS 
+DEL MÉDICO 
+
+230 
+
+290 
+
+-60 
+
+60 
+
+79,31% 
+
+100% 
+
+ELIMINAR DATOS 
+DEL MÉDICO 
+
+195 
+
+230 
+
+-35 
+
+35 
+
+84,78% 
+
+100% 
+
+PROMEDIO TOTAL 
+
+705 
+
+870 
+
+-165 
+
+165 
+
+81,03% 
+
+100% 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Esta información expresada en forma gráfica y en porcentajes quedaría de la siguiente manera 
+ver gráficos estadísticos figura (10-2) y en la figura (11-2). 
+
+
+0
+
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+700
+
+800
+
+900
+
+1000
+
+INGRESAR DATOS DEL MEDICO
+
+MODIFICAR DATOS DEL MEDICO
+
+ELIMINAR DATOS DEL MEDICO
+
+Promedio total
+
+Lineas de Codigo 
+Diferencia en lineas de codigo 
+
+PRIMEFACES
+
+HTML5
+
+0,00%
+
+20,00%
+
+40,00%
+
+60,00%
+
+80,00%
+
+100,00%
+
+120,00%
+
+INGRESAR DATOS DEL MEDICO
+
+MODIFICAR DATOS DEL MEDICO
+
+ELIMINAR DATOS DEL MEDICO
+
+Promedio total
+
+Porcentajes 
+
+Diferencia expresada en porcentajes 
+
+HTML5
+
+PRIMEFACES
+
+ 
+
+Figura 10-2 Diferencia líneas de código 
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Figura 11-2 Diferencia expresada en porcentajes 
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+
+Luego de los resultados obtenidos se puede concluir que la diferencia de líneas de código para 
+el módulo correspondiente al médico es de 165 líneas de código lo que representa un 19 % 
+menos líneas de código en HTML5 con respecto a la tecnología PRIMEFACES. 
+
+En el desarrollo del módulo médico para el indicador números de líneas de código se obtuvo los 
+siguientes resultados que transformados a una escala cuantitativa se tiene los siguientes valores 
+ver tabla (18-2) 
+
+ 
+
+Tabla 18-2 Líneas de código para el Módulo Médico transformados a una escala cuantitativa 
+
+LÍNEAS DE CÓDIGO PARA EL MÓDULO MÉDICO 
+
+ 
+
+DIFERENCIA EN PORCENTAJE 
+
+ESCALA CUANTITATIVA 
+
+ACCIONES MODULO MÉDICO 
+
+HTML5 
+
+PRIME FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS DEL MÉDICO 
+
+80,00% 
+
+100% 
+
+2 
+
+1 
+
+MODIFICAR DATOS DEL MÉDICO 
+
+79,31% 
+
+100% 
+
+2 
+
+1 
+
+ELIMINAR DATOS DEL MÉDICO 
+
+84,78% 
+
+100% 
+
+2 
+
+1 
+
+PROMEDIO TOTAL 
+
+81,03% 
+
+100% 
+
+2 
+
+1 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+2.10. Tiempo de carga de la página Web 
+
+ 
+
+ 
+
+Para realizar este análisis se ha tomado en consideración el prototipo del módulo médico con 
+sus respectivas acciones como son: Ingresar, Modificar, Eliminar datos de un médico. 
+
+En la tabla (19-2) Se muestra la escala de Valoración para el indicador tiempo de carga de la 
+interfaz del médico determinado en kbps. Tomado estos parámetros en consideración se 
+obtuvieron los siguientes resultados: 
+
+En la tabla 19-2 se puede observar los resultados obtenidos luego del análisis el tiempo de carga 
+de cada interfaz expresado en Kbps. 
+
+ 
+
+Tabla 19-2 Tiempo de Carga de la Interfaz del médico 
+
+TIEMPO DE CARGA DE LA INTERFAZ DEL MÉDICO 
+
+ 
+
+PESO DE LA 
+INTERFAZ 
+
+TIEMPO DE 
+CARGA 6KBPS 
+
+VALORACIÓN 
+CUANTITATIVA 
+
+ACCIONES MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR DATOS 
+DEL MÉDICO 
+
+15 
+
+50 
+
+2,5 
+
+8,333333333 
+
+RÁPIDA 
+
+LENTA 
+
+MODIFICAR DATOS 
+DEL MÉDICO 
+
+13 
+
+40 
+
+2,16666667 
+
+6,666666667 
+
+RÁPIDA 
+
+PARCIALMENTE LENTA 
+
+ELIMINAR DATOS 
+DEL MÉDICO 
+
+10 
+
+37 
+
+1,66666667 
+
+6,166666667 
+
+RÁPIDA 
+
+PARCIALMENTE LENTA 
+
+PROMEDIO TOTAL 
+
+38 
+
+127 
+
+6,33333333 
+
+21,16666667 
+
+PARCIALMENTE LENTA 
+
+LENTA 
+
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Tabla 20-2 Tiempo de carga de la Interfaz Médico 
+
+TIEMPO DE CARGA DE LA INTERFAZ DEL MÉDICO 
+
+ 
+
+TECNOLOGÍAS 
+
+DIFERENCIA EN 
+SEGUNDOS 
+
+DIFERENCIA ENTRE LAS DOS 
+TECNOLOGÍAS EXPRESADA EN 
+PORCENTAJES 
+
+ACCIONES 
+MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR 
+DATOS DEL 
+MÉDICO 
+
+2,5 
+
+8,3333 
+
+-5,8333 
+
+5,8333 
+
+30,00% 
+
+100% 
+
+MODIFICAR 
+DATOS DEL 
+MÉDICO 
+
+2,16 
+
+6,666 
+
+-4,506 
+
+4,506 
+
+32,40% 
+
+100% 
+
+ELIMINAR DATOS 
+DEL MÉDICO 
+
+1,66 
+
+6,166 
+
+-4,506 
+
+4,506 
+
+26,92% 
+
+100% 
+
+PROMEDIO 
+TOTAL 
+
+ 
+
+ 
+
+ 
+
+ 
+
+29,78% 
+
+100% 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Esta información expresada en forma gráfica y en porcentajes quedaría de la siguiente manera 
+ver gráficos (12-2, 13-2) 
+
+ 
+
+ 
+
+ 
+
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+INGRESAR DATOS DEL MEDICO
+
+MODIFICAR DATOS DEL MEDICO
+
+ELIMINAR DATOS DEL MEDICO
+
+Promedio total
+
+Segundos 
+
+TIEMPO DE CARGA 6kbps 
+
+HTML5
+
+PRIMEFACES
+
+0,00%
+
+50,00%
+
+100,00%
+
+150,00%
+
+HTML5
+
+PRIMEFACES
+
+Porcentaje 
+
+Diferencia de tiempos de carga expresada en porcentajes 
+
+INGRESAR DATOS DEL MEDICO
+
+MODIFICAR DATOS DEL MEDICO
+
+ELIMINAR DATOS DEL MEDICO
+
+Promedio total
+
+ 
+
+Figura 12-2 Representación gráfica del Tiempo de Carga 
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ Figura 13-2 Representación gráfica del tiempo de carga expresada en porcentajes 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+
+Luego de los resultados obtenidos se puede concluir que la diferencia de tiempos de carga de la 
+interfaz para el modulo correspondiente al módulo MÉDICO es de 14.833 segundos lo que 
+representa un 70 % menos tiempo de carga en HTML5 comparado con la tecnología 
+PRIMEFACES. 
+
+ 
+
+En el desarrollo del módulo MÉDICO se obtuvo los siguientes resultados que transformados a 
+una escala cuantitativa se tiene los siguientes valores ver tabla (21-2) 
+
+ 
+
+Tabla 21-2 Tiempo de Carga de la Interfaz Médico 
+
+TIEMPO DE CARGA DE LA INTERFAZ DEL MÉDICO 
+
+ 
+
+TIEMPO DE 
+CARGA EN 
+SEGUNDOS 
+
+VALORACIÓN 
+CUANTITATIVA 
+
+VALORACIÓN 
+CUALITATIVA 
+
+ACCIONES 
+MODULO 
+MÉDICO 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME FACES 
+
+INGRESAR 
+DATOS DEL 
+MÉDICO 
+
+2,5 
+
+8,333333333 
+
+3 
+
+1 
+
+RÁPIDA 
+
+LENTA 
+
+MODIFICAR 
+DATOS DEL 
+MÉDICO 
+
+2,16666667 
+
+6,666666667 
+
+3 
+
+2 
+
+RÁPIDA 
+
+PARCIALMENTE LENTA 
+
+ELIMINAR 
+DATOS DEL 
+MÉDICO 
+
+1,66666667 
+
+6,166666667 
+
+3 
+
+2 
+
+RÁPIDA 
+
+PARCIALMENTE LENTA 
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón. 
+
+ 
+
+En la cual se puede concluir que HTML5 en las diferentes acciones del módulo médico tiene 
+una valoración de Rápido mientras que PRIME FACES tiene una valoración variable de 
+parciamente lenta a lenta. Basado en los parámetros indicados en la tabla (8-2) 
+
+ 
+
+2.11. Cantidad de recursos usados 
+
+ 
+
+Para realizar este análisis se ha tomado en consideración el prototipo del módulo médico con 
+sus respectivas acciones como son: Ingresar, Modificar, Eliminar datos de un médico y las 
+líneas de código utilizadas para realizar una tarea específica Ingresar, Modificar y eliminar datos 
+de un médico para lo cual se ha tomado en consideración tres parámetros que son la cantidad de 
+uso del procesador, memoria RAM y cantidad de red ocupada para lo cual contamos con los 
+siguientes recursos: 
+
+ 
+
+ 
+
+ 
+
+
+C:\Users\Usuario\Desktop\Sin título.png
+Características del equipo utilizado para realizar el test 
+
+ 
+
+1. Procesador: Intel Core i3 de tercera generación 1.80 GHz 
+2. Memoria RAM: Ddr3 4Gb 1330 MHz 
+3. Disco Duro 500 Gb disponible 338 Gb 
+
+
+
+
+ 
+
+ 
+
+Figura 14-2 Características del equipo utilizado para realizar el test 
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Velocidad de Conexión: 
+
+Velocidad de conexión banda ancha CNT velocidad de descarga 4.06 Mbps, velocidad de 
+Subida 0.51 Mbps latencia 28ms Jitter o espectro de onda 1ms. 
+
+ 
+
+ 
+
+ Figura 15-2 Velocidad de Conexión 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+
+ 
+
+Tabla 22-2 Resultados del Test 
+
+CANTIDAD DE RECURSOS USADOS 
+
+RECURSOS DEL 
+SISTEMA 
+
+RECURSOS UTILIZADOS 
+
+RECURSOS 
+UTILIZADOS EN 
+PORCENTAJES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+PROCESADOR 
+
+1800 KHZ 
+
+100% 
+
+30,60 
+KHZ 
+
+99 KHZ 
+
+1,70% 
+
+5,50% 
+
+MEMORIA RAM 
+
+4000000 
+KB 
+
+100% 
+
+51400 KB 
+
+57900 KB 
+
+1,28500% 
+
+1,4475% 
+
+CANTIDAD DE 
+DISCO DURO 
+
+338000000 KB 
+
+100% 
+
+100 
+KB 
+
+600 KB 
+
+0,00002985% 
+
+0,00017750% 
+
+ANCHO DE 
+BANDA 
+
+32480000B 
+
+100% 
+
+100000B 
+
+4300000B 
+
+0,30788% 
+
+13,2382% 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+En el desarrollo del módulo MÉDICO se obtuvo los siguientes resultados que transformados a 
+una escala cuantitativa tenemos los siguientes valores ver tabla (22-2), (23-2), (24-2), (25-2). 
+
+ 
+
+ 
+
+Tabla 23-2 Resultados de recursos usados expresados a escala cuantitativa 
+
+CANTIDAD DE RECURSOS USADOS 
+
+ 
+
+ 
+
+ 
+
+RECURSOS DEL SISTEMA 
+
+RECURSOS 
+UTILIZADOS 
+
+RECURSOS UTILIZADOS 
+EN PORCENTAJES 
+
+ESCALA 
+CUANTITATIVA 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+PROCESADOR 
+
+1800 
+KHZ 
+
+100% 
+
+30,60 
+KHZ 
+
+99 
+KHZ 
+
+1,70% 
+
+5,50% 
+
+3 
+
+2 
+
+MEMORIA 
+RAM 
+
+4000000 KB 
+
+100% 
+
+51400 
+KB 
+
+57900 
+KB 
+
+1,28500% 
+
+1,4475% 
+
+3 
+
+2 
+
+CANTIDAD 
+DE DISCO 
+DURO 
+
+338000000 KB 
+
+100% 
+
+100 
+KB 
+
+600 
+KB 
+
+0,00002985% 
+
+0,00017750% 
+
+3 
+
+2 
+
+ANCHO DE 
+BANDA 
+
+32480000BPS 
+
+100% 
+
+100000BPS 
+
+4300000BPS 
+
+0,30788% 
+
+13,2382% 
+
+3 
+
+2 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Para finalizar el análisis procedemos a realizar la suma total de la escala cuantitativa obtenida en 
+cada uno de los indicadores tomados en consideración para este estudio ver (tabla 24-2). 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+Tabla 24-2 Resultados de la suma de Escalas cuantitativas 
+
+SUMA DE LAS ESCALAS CUANTITATIVAS 
+
+ 
+
+ 
+
+ACCIONES DEL MÓDULO MÉDICO 
+
+INGRESAR 
+
+MODIFICAR 
+
+ELIMINAR 
+
+TECNOLOGÍAS 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+HTML5 
+
+PRIME 
+FACES 
+
+PESO DE LOS MÓDULOS 
+
+3 
+
+2 
+
+3 
+
+2 
+
+3 
+
+2 
+
+LÍNEAS DE CÓDIGO 
+
+2 
+
+1 
+
+2 
+
+1 
+
+2 
+
+1 
+
+TIEMPO DE CARGA DE 
+LA INTERFAZ 
+
+3 
+
+1 
+
+3 
+
+2 
+
+3 
+
+2 
+
+CANTIDAD DE 
+RECURSOS USADOS 
+
+3 
+
+2 
+
+3 
+
+2 
+
+3 
+
+2 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+Resultado de la Suma total de las escalas cuantitativas 
+
+ 
+
+ 
+
+Tabla 25-2 Resultado de la suma total de las escalas cuantitativas 
+
+RESULTADO FINAL ESCALA CUANTITATIVA 
+
+HTML5 
+
+PRIME FACES 
+
+33 PUNTOS 
+
+20 PUNTOS 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Se concluye que HTML5 es superior con 11 puntos a PRIME FACES lo que equivale a decir 
+que HTML5 es un 39.3939% más eficiente que PRIME FACES demostrando la hipótesis de la 
+que se partió para realizar este tema de investigación. 
+
+ 
+
+2.12 Análisis estadístico de los datos utilizando Spss 22. 
+
+ 
+
+Para realizar una validación estadística del trabaja de tesis se utilizará el estadístico de prueba 
+.TStudent. debido a que las variables son relacionadas. Además, realizar comparaciones entre 
+las dos tecnologías HTML5 y PRIME FACES y el tamaño de la muestra es n=20. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Los pasos que se utilizan para realizar la validación de la hipótesis de Investigación son: 
+
+
+ 
+
+2.12.1 Redactar la hipótesis nula y la hipótesis de investigación. 
+
+ 
+
+ H0 = No hay diferencia significativa en las medias de los parámetros anteriormente evaluados 
+ver Tabla (23-2) 
+
+ 
+
+H1= = Existe una diferencia significativa en las medias de los parámetros anteriormente 
+evaluados ver Tabla (23-2) 
+
+ 
+
+2.12.2 Definir el valor de significancia. 
+
+ 
+
+El porcentaje de error que estamos dispuesto a correr al realizar nuestra prueba con cada uno 
+de los módulos es del 0.05 equivalente al 5% de error por ser el valor más utilizado en la 
+verificación de hipótesis. 
+
+ 
+
+2.12.3 Elección de la prueba 
+
+ 
+
+La prueba paramétrica para demostración de la hipótesis planteada, la realizamos por medio de 
+TStudent (muestras relacionadas), debido a que la variable fija nos crea dos medidas, y la 
+variable aleatoria es un numérica. La distribución TStudent es una distribución de probabilidad 
+que surge del problema de estimar la media de una población normalmente distribuida cuando 
+el tamaño de la muestra es pequeña. Al realizar la prueba TStudent para la determinación de las 
+diferencias entre dos medias muéstrales y para la construcción del intervalo de confianza para la 
+diferencia entre las medias. 
+
+ 
+
+2.12.3.1 Criterio de decisión 
+
+ 
+
+Para verificar la hipótesis se tomó un criterio a una cola derecha con un error del 5% 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+http://ncalculators.com/images/formulas/t-test-formula.jpg
+2.12.3.2 Cálculos 
+
+ 
+
+ 
+
+Dónde: 
+
+Valor de T calculado = 5,86615417 
+
+Valor de T critico una cola = 1,70561792 
+
+Valor de T critico dos colas = 2,05552944 
+
+Grados de libertad = 26 = (n1 + n2) -2 
+
+Media HTML5 = 2,71428571 = x1 
+
+Media PRIME FACES = 1,642857143 = x2 
+
+Numero de muestras n1 = 14 n2 = 14 
+
+ 
+
+2.12.3.3 Conclusión 
+
+ 
+
+Con un nivel de significancia del 5% que corresponde al 0.05 y con 38 grados de libertad si 
+acepta la hipótesis de investigación es decir que HTML5 supera a PRIME FACES es decir el T 
+teórico o T calculado Tc= 0.026 Tc=1.44 por lo tanto tt<tc 
+
+ 
+
+2.12.4 Prueba de normalidad 
+
+ 
+
+2.12.4.1 Criterio para determinar la normalidad 
+
+ 
+
+P. Valor >= a Aceptar la Ho = Los datos provienen de una distribución normal 
+
+Valor < a Aceptar la H1 = Los datos no provienen de una distribución normal 
+
+ 
+
+2.12.4.2 Análisis y resultado obtenido en Spss22 para el test de normalidad 
+
+ 
+
+Para realizar el análisis se toma en cuenta que a= 0.05 y se corrobora o se niega la hipótesis Ho 
+
+P. Valor >= a Aceptar la Ho = Los datos provienen de una distribución normal 
+
+Valor < a Aceptar la H1 = Los datos no provienen de una distribución normal 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Tabla 26-2 Normalidad de los datos 
+
+NORMALIDAD 
+
+P. VALOR (HTML5)= 0.260 
+
+> 
+
+.= 0.05 
+
+P. VALOR (PRIME FACES )= 
+0.260 
+
+> 
+
+.= 0.05 
+
+CONCLUSIÓN: 
+
+Tenemos que el valor de p = 0.260 siendo > a= 0.05 comprobando la hipótesis ho que 
+manifiesta que los datos provienen de una distribución normal. 
+
+
+
+Realizado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+2.12.5 Análisis TStudent 
+
+ 
+
+Tabla 27-2 Valores para realizar el análisis T TStudent 
+
+TABLA DE VALORES OBTENIDOS PARA REALIZAR LA PRUEBA 
+TSTUDENT 
+
+PARÁMETROS 
+
+HTML5 
+
+PRIME 
+FACES 
+
+Peso ingresar datos del MÉDICO 
+
+3 
+
+2 
+
+Peso modificar datos del MÉDICO 
+
+3 
+
+2 
+
+Peso eliminar datos del MÉDICO 
+
+3 
+
+2 
+
+Líneas de código para ingresar datos del MÉDICO 
+
+2 
+
+1 
+
+Líneas de código para ingresar datos del MÉDICO 
+
+2 
+
+1 
+
+Líneas de código para modificar datos del MÉDICO 
+
+2 
+
+1 
+
+Líneas de código para eliminar datos del MÉDICO 
+
+2 
+
+1 
+
+Tiempo de carga interfaz de ingresar datos del MÉDICO 
+
+3 
+
+1 
+
+Tiempo de carga interfaz de modificar datos del MÉDICO 
+
+3 
+
+2 
+
+Tiempo de carga interfaz de eliminar datos del MÉDICO 
+
+3 
+
+2 
+
+Cantidad de procesador utilizado 
+
+3 
+
+2 
+
+Cantidad de memoria RAM utilizada 
+
+3 
+
+2 
+
+Cantidad de espacio en el disco duro 
+
+3 
+
+2 
+
+Ancho de banda utilizado 
+
+3 
+
+2 
+
+
+
+Elaborado por: David Lasluisa., Claudio Padrón. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Tabla 28-2 Resultados de TStudent 
+
+PRUEBA T PARA DOS MUESTRAS SUPONIENDO VARIANZAS IGUALES 
+
+ 
+
+VARIABLE 1 
+
+VARIABLE 2 
+
+Media 
+
+2,71428571 
+
+1,642857143 
+
+Varianza 
+
+0,21978022 
+
+0,247252747 
+
+Observaciones 
+
+14 
+
+14 
+
+Varianza agrupada 
+
+0,23351648 
+
+ 
+
+Diferencia hipotética de las medias 
+
+0 
+
+ 
+
+Grados de libertad 
+
+26 
+
+ 
+
+Estadístico t 
+
+5,86615417 
+
+ 
+
+P(t<=t) una cola 
+
+1,7397E-06 
+
+ 
+
+Valor crítico de t (una cola) 
+
+1,70561792 
+
+ 
+
+P(t<=t) dos colas 
+
+3,4793E-06 
+
+ 
+
+Valor crítico de t (dos colas) 
+
+2,05552944 
+
+ 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Conclusión 
+
+ 
+
+La tabulación de los datos de la tabla (28-1) verificados por T TStudent en la tabla (28-2) el T 
+es mayor que el valor de T critico por lo tanto se niega la hipótesis nula que manifiesta que las 
+dos variables tiene la misma valoración, por lo tanto se acepta la hipótesis alternativa, que 
+manifiesta que las dos variables tienen una valoración diferente obteniendo resultados de P 
+(T<=t) una cola y P (T<=t) dos colas valores menores que 0.5 lo que indica que la diferencia es 
+estadísticamente significativa. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+CAPITULO III 
+
+ 
+
+ 
+
+3. MARCO PROPOSITIVO 
+
+ 
+
+ 
+
+3.1. Desarrollo de la aplicación web 
+
+ 
+
+3.1.1. Estudio preliminar 
+
+ 
+
+Implementación de la metodología Scrum en el patronato de acción social .Nuestra señora del 
+monte" del cantón Quero para la gestión del desarrollo del sistema Web SYSMEDIC. 
+
+En la metodología ágil Scrum un proyecto se ejecuta en bloques temporales cortos y 
+fijos (iteraciones mensuales y hasta de dos semanas, si así se necesita la elaboración de los 
+avances del proyecto estipulado). Cada iteración tiene que proporcionar un resultado completo, 
+un avance del producto final que sea susceptible de ser entregado con el mínimo esfuerzo al 
+cliente cuando lo solicite. 
+
+ 
+
+3.1.1.1. Propósito 
+
+ 
+
+Desarrollar un sistema de control de turnos y fichas medicas SISMEDIC. 
+
+ 
+
+3.1.1.2. Alcance 
+
+ 
+
+El proyecto será desarrollado para el Patronato de acción social nuestra señora del monte del 
+cantón Quero. El cual contará con la automatización de los procesos de asignación de turnos 
+por especialidad a los médicos de la institución, además llevará un registro de los médicos, 
+personal administrativo y emitirá las fichas médicas de cada paciente tratado. 
+
+ 
+
+3.1.1.3. Requerimientos o componentes de la solución 
+
+ 
+
+Requisito A: 
+
+Registro, modificación y eliminación de datos de Usuario (Nombre Completo, alias, 
+contraseña); autenticación mediante alias y contraseña. 
+
+Registro, modificación y eliminación de datos de Doctores (Nombre Completo, alias, 
+contraseña); autenticación mediante alias y contraseña. 
+
+
+Registro, modificación y eliminación de pacientes (Nombre completo, datos informativos, 
+antecedentes médicos y alergias). 
+
+ 
+
+Requisito B. 
+
+Registro modificación y eliminación de kárdex o Ficha médica (Fecha y hora, motivo de 
+consulta, sintomatología, y asignación del paciente) 
+
+Registro y asignación de médicos a pacientes (código de doctor) 
+
+Registro y modificación y eliminación de Citas médicas (Fecha, Hora, Motivo y asignación de 
+un médico). 
+
+ 
+
+Requisito C 
+
+Registro de datos de Odontograma (registro de problemas dentales). 
+
+Registro de Indicadores de salud Bucal (piezas dentales, placa, cálculo y gingivitis). 
+
+Registro de indicadores de CPU-ceo (variables c, p, o y total). 
+
+Registro de planes de diagnóstico terapéutico y educacional (Biometría, Química, Rayos X, 
+otros). 
+
+Requisito D 
+
+Reportes listados de pacientes general (cédula, nombre o apellido). 
+
+Reporte listado de pacientes por especialidad (cédula, nombres o apellido). 
+
+Reporte listado de médicos (cédula, nombre, apellido)- 
+
+Reporte de kárdex (cédula, nombre, apellido). 
+
+Reporte de usuarios (cédula, nombre, apellido). 
+
+Reporte de citas médicas por médico (cédula, fecha). 
+
+Reporte de citas en general (fecha). 
+
+3.2. Descripción General de la Metodología 
+
+3.2.1. Fundamentación 
+
+Las principales razones de un ciclo de desarrollo iterativo e incremental de tipo Scrum para la 
+realización de un sistema son: 
+
+
+3.2.2 Sistema Modular 
+
+Módulo de ingresos de usuarios: 
+
+
+. Ingreso de datos personales de los usuarios 
+. Registro de tipos de usuario con sus respectivos roles y permisos e acceso al sistema 
+. Ingreso de médicos 
+. Registro de datos personales de cada médico. 
+. Registro de datos profesionales de cada médico asignados a un área específica. 
+
+
+
+. Visualización del reporte de los datos de cada usuario con respecto rol. 
+. Visualización del reporte de los datos de cada médico con su respectiva área. 
+
+
+Módulo de ingresos de pacientes 
+
+
+. Ingreso de datos de cada paciente o historia clínica. 
+. Ingreso de datos de cita médica de cada paciente. 
+. Asignación de cada paciente a aun MÉDICO especifico. 
+. Visualización de pacientes dado su cedula, nombre o apellido. 
+. Visualización de citas médicas por MÉDICO dado una fecha determinada. 
+. Visualización de citas médicas asignadas al médico por día. 
+
+
+ Módulo de ingreso de consulta o Kárdex 
+
+
+. Ingreso de datos de consulta de cada paciente por el médico designado. 
+. Ingreso de datos de Odontograma a cada paciente en el área de odontología. 
+. Visualización de consultas por cada médico. 
+. Visualización del reporte de consultas dado una fecha. 
+. Visualización del reporte de consultas general por parte del are administrativa. 
+
+
+3.2.3. Entregables 
+
+Se procede a la entrega de los módulos terminados a la institución, de forma que se pueda 
+disponer de una funcionalidad y corrección de errores en un tiempo mínimo, para disponer con 
+el progreso del desarrollo el sistema y mejora continua. 
+
+
+. Previsible cambio o reconstrucción de requisitos. 
+
+
+3.3 Involucrados y roles del proyecto 
+
+ 
+
+ 
+
+Tabla 29-3 Roles y Responsabilidades 
+
+Persona 
+
+
+Contacto 
+
+
+Rol 
+
+
+David Lasluisa 
+
+
+David.lasluisa@yahoo.es 
+
+
+Scrum manager 
+
+
+Ing. Nelson rosero 
+
+
+Nrosero@gagquero.gob,ec 
+
+
+Product owner 
+
+
+David Lasluisa 
+
+
+David.lasluisa@yahoo.es 
+
+
+Desarrollador 
+
+
+Claudio padrón 
+
+
+Padron.claudio@gmail.com 
+
+
+Desarrollador 
+
+
+
+
+ 
+
+
+Elaborado por: Claudio padrón, David Lasluisa 
+
+ 
+
+
+3.4 Tecnología 
+
+La tecnología y recursos que se utilizó para el desarrollo, implementación y ejecución del 
+sistema son: 
+
+Software: 
+
+ 
+
+Tabla 30-3 Tecnología Software 
+
+SOFTWARE 
+
+EQUIPOS 
+
+CARACTERÍSTICAS 
+
+ 
+
+ 
+
+ 
+
+PC 
+
+ 
+
+DESKTOP 
+
+SISTEMA OPERATIVO WINDOWS 8.1 64 BITS 
+
+APACHE GLASSFISH 
+
+NETBEANS 7.4 
+
+MYSQL 
+
+
+
+ Elaborado por: Claudio Padrón, David Lasluisa 
+
+Hardware: 
+
+ 
+
+Tabla 31-3 Tecnología Hardware 
+
+HARDWARE 
+
+EQUIPOS 
+
+CARACTERÍSTICAS 
+
+ 
+
+ 
+
+ 
+
+PC 
+
+DESKTOP 
+
+PROCESADOR INTEL CORE I7 
+
+MEMORIA 16 GB 
+
+DISCO DURO DE 1 TERABYTE 
+
+UNIDAD DE DVD-ROM 
+
+PANTALLA DE 17 PULGADAS. 
+
+MOUSE Y TECLADO 
+
+IMPRESORA EPSON L355 
+
+
+
+ Elaborado por: Claudio Padrón, David Lasluisa 
+
+ 
+
+3.5. Herramientas 
+
+3.5.1Product Backlog 
+
+El Product Backlog representa todo lo necesario para desarrollar y lanzar un producto exitoso. 
+Se trata de una lista de todas las características, funciones, tecnologías, mejoras y correcciones 
+de errores que constituyen los cambios que se harán al producto para futuras versiones del 
+Sistema SYSMEDIC. 
+
+Para el Product Backlog del sistema se ha determinado las siguientes fechas: 
+
+Fecha de inicio: 7 de febrero del 2015 
+
+Fecha de Fin: 7 de junio del 2015 
+
+
+Tabla 32-3 Product Backlog 
+
+ID 
+
+PUNTOS 
+
+RANGO 
+
+TAREA 
+
+ESTADO 
+
+ITERACIÓN 
+
+1 
+
+1 
+
+1 
+
+ Diseño de la Base de Datos 
+
+ACTIVO 
+
+1 
+
+2 
+
+2 
+
+1 
+
+ Diseño de Arquitectura de Componentes y 
+arquitectura de red 
+
+ACTIVO 
+
+1 
+
+3 
+
+3 
+
+1 
+
+ Diseño de Interfaz Principal 
+
+ACTIVO 
+
+1 
+
+4 
+
+4 
+
+1 
+
+ Autentificación del Usuario 
+
+ACTIVO 
+
+1 
+
+5 
+
+5 
+
+1 
+
+ Como administrador desea realizar el ingreso, 
+modificación y eliminación de usuarios 
+
+ACTIVO 
+
+1 
+
+6 
+
+6 
+
+1 
+
+ Como administrador desea realizar el ingreso, 
+modificación y eliminación de Médicos 
+
+ACTIVO 
+
+1 
+
+7 
+
+7 
+
+1 
+
+ Como administrador desea realizar el ingreso, 
+modificación y eliminación de especialidades 
+
+ACTIVO 
+
+1 
+
+8 
+
+8 
+
+1 
+
+ Como administrador desea realizar el ingreso, 
+modificación y eliminación de citas medicas 
+
+ACTIVO 
+
+1 
+
+9 
+
+9 
+
+1 
+
+ Como administrador desea realizar el ingreso, 
+modificación y eliminación de consultas medicas 
+
+ACTIVO 
+
+1 
+
+10 
+
+10 
+
+1 
+
+ Como administrador desea realizar el registro de 
+Kárdex 
+
+ACTIVO 
+
+1 
+
+11 
+
+6 
+
+1 
+
+ Como administrador deseo visualizar los pacientes 
+registrados 
+
+ACTIVO 
+
+3 
+
+12 
+
+7 
+
+2 
+
+ Como administrador deseo visualizar un reporte 
+control de pacientes atendidos 
+
+ACTIVO 
+
+3 
+
+13 
+
+10 
+
+2 
+
+ Como administrador deseo visualizar el kárdex de 
+cada MÉDICO 
+
+ACTIVO 
+
+3 
+
+14 
+
+10 
+
+2 
+
+ Como administrador deseo visualizar el reporte de 
+citas médicas realizados en el día 
+
+ACTIVO 
+
+3 
+
+15 
+
+8 
+
+2 
+
+ Como administrador deseo realizar la anulación de 
+una cita medica 
+
+ACTIVO 
+
+3 
+
+16 
+
+8 
+
+2 
+
+ Como administrador deseo visualizar los médicos por 
+especialidad. 
+
+ACTIVO 
+
+3 
+
+17 
+
+9 
+
+2 
+
+ Como administrador desea realizar el registro y 
+actualización de claves de usuarios 
+
+ACTIVO 
+
+3 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+3.5.2. Sprint Backlog 
+
+ 
+
+Tabla 33-3 Sprint Backlog 
+
+REQUISITO 
+
+TAREA 
+
+RESPONSABLE 
+
+ESTADO 
+
+Requisito A 
+
+Tarea 1 
+
+David Lasluisa 
+
+Completado 
+
+Requisito B 
+
+Tarea 2 
+
+Claudio Padrón 
+
+Completado 
+
+Requisito C 
+
+Tarea 3 
+
+David Lasluisa 
+
+Completado 
+
+Requisito D 
+
+Tarea 4 
+
+Claudio Padrón 
+
+Completado 
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+
+3.5.3. Sprint 1 
+
+En esta iteración se describirá las tareas que se realizará en la creación de las Capas de 
+infraestructura, acceso a datos, lógica de negocios y presentación para la iteración 1. Las fechas 
+de inicio y finalización del sprint 1 son: 
+
+Fecha de Inicio: 18 de febrero del 2015 
+
+Fecha de Fin: 30 de marzo de 2014 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+En la siguiente Tabla 34-3 muestra el desarrollo del Sprint 1 
+
+ 
+
+Tabla 34-3 Sprint 1 
+
+ID 
+
+TIPO 
+
+RANGO 
+
+TITULO 
+
+PUNTOS 
+
+ASIGNADO 
+
+ESTADO 
+
+ESTIMACIÓN 
+HORAS 
+
+1 
+
+Inicio 
+
+1 
+
+Inicio del Proyecto 
+
+30 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Reunión con el coordinador del proyecto 
+
+5 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Diseño de la base de datos 
+
+25 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+20 
+
+2 
+
+Caso de Técnico 
+
+1 
+
+Diseño de Arquitectura de Componentes y arquitectura de red 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Diseño de arquitectura de componentes 
+
+5 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Diseño de arquitectura de red 
+
+5 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+3 
+
+Caso de Usuario 
+
+1 
+
+Diseño de Interfaz Principal 
+
+20 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+16 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+4 
+
+Caso de Usuario 
+
+1 
+
+Autenticación de Usuarios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+
+
+
+5 
+
+Caso de Usuario 
+
+1 
+
+Ingreso, modificación y eliminación de Usuarios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+6 
+
+Caso de Usuario 
+
+1 
+
+Ingreso, modificación y eliminación de Empleados 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+7 
+
+Caso de Usuario 
+
+1 
+
+Ingreso, modificación y eliminación de médicos 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+8 
+
+Caso de Usuario 
+
+1 
+
+Ingreso, modificación y eliminación de Especialidades 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+
+
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+9 
+
+Caso de Usuario 
+
+1 
+
+Registro de Usuarios 
+
+30 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+10 
+
+Caso de Usuario 
+
+1 
+
+Registro de Empleados 
+
+30 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+
+11805819_865460446861327_1571825782_n.jpg 
+
+
+3.5.3.1. Casos Técnico 
+
+Diseño de la base de Datos (Ver Figura 16-3) 
+
+ 
+
+Figura 16-3 Base de datos 
+
+Elaborado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+Diseño de la Arquitectura de red (Ver Figura 17-3) 
+
+La arquitectura que se utilizara en la elaboración del proyecto es la de modelo, vista y 
+controlador. 
+
+
+ 
+
+ Figura 17-3 Arquitectura de Red 
+
+ Elaborado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+Diseño de arquitectura de componentes (Ver Figura 18-3) 
+
+ 
+
+Figura 18-3 Arquitectura de Componentes 
+
+Elaborado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Diagrama de Despliegue (Ver Figura 19-3) 
+
+ 
+
+ Figura 19-3 Diagrama de Despliegue 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+ 
+
+3.5.3.2. Casos de Prueba 
+
+NUMERO DE ITERACIÓN: 1 
+
+IDENTIFICADOR DEL USER STORIES: 4 
+
+TITULO: El sistema debe permitir la autenticación de Usuarios 
+
+RANKING: 1 
+
+PUNTOS: 10 
+
+ESTADO: Completado 
+
+CRITERIOS DE ACEPTACIÓN 
+
+. El administrador deberá visualizar formulario principal de la aplicación 
+. El administrador deberá visualizar un formulario de autenticación 
+. El administrador deberá recibir un mensaje de nombre de usuario o contraseña 
+incorrecta si las credenciales de autenticación son incorrectas. 
+
+
+ 
+
+ 
+
+ 
+
+
+CASOS DE PRUEBA 
+
+ 
+
+ 
+
+Tabla 35-3 Caso de Prueba Usuarios 
+
+CASO DE PRUEBA 
+
+El sistema debe permitir la autenticación de Usuarios 
+
+PROPÓSITO 
+
+Probar que el administrador pueda ingresar al mené del sistema 
+
+PRERREQUISITOS 
+
+Que el administrador ingrese a la pantalla principal 
+
+PASOS 
+
+1. En el formulario debe ingresar su alias y nombre 
+1.1. Mensaje de error si credenciales incorrectas 
+
+
+
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón. 
+
+Prototipo de la Interfaz 
+
+ 
+
+Figura 20-3 Inicio de Sesión 
+
+ Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Historias de usuario Sprint 1 (Anexo B) 
+
+3.5.4. Sprint 2 
+
+En esta iteración se describirá las tareas que se realizará en la creación de las Capas de 
+infraestructura, acceso a datos, lógica de negocios y presentación para la iteración 2. Las fechas 
+de inicio y finalización del sprint 2 son: 
+
+Fecha de Inicio: 31 de marzo de 2015 
+
+Fecha de Fin: 16 de mayo de 2015 
+
+En la siguiente Tabla 36-3 muestra el desarrollo del Sprint 2 
+
+
+ 
+
+Tabla 36-3 Sprint 2 
+
+ID 
+
+TIPO 
+
+RANGO 
+
+TITULO 
+
+PUNTOS 
+
+ASIGNADO 
+
+ESTADO 
+
+ESTIMACIÓN 
+HORAS 
+
+12 
+
+Caso de Usuario 
+
+2 
+
+Ingreso de Citas Medicas 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+13 
+
+Caso de Usuario 
+
+2 
+
+Ingreso de Kárdex 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+14 
+
+Caso de Usuario 
+
+2 
+
+Generación del listado de existencias de citas medicas 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+
+ACTIVO 
+
+2 
+
+
+
+
+Claudio Padrón 
+
+15 
+
+Caso de Usuario 
+
+2 
+
+Generación del control de existencias de citas medicas 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+16 
+
+Caso de Usuario 
+
+2 
+
+Generación listado de Kárdex 
+
+30 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+17 
+
+Caso de Usuario 
+
+2 
+
+Listado General de citas medicas 
+
+30 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, 
+Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón. 
+
+
+CASOS DE PRUEBA 
+
+ 
+
+NUMERO DE ITERACIÓN: 2 
+
+IDENTIFICADOR DEL USER STORIES: 12 
+
+TITULO: Eliminación de fichas y citas médicas. 
+
+RANKING: 2 
+
+PUNTOS: 10 
+
+ESTADO: Completado 
+
+CRITERIOS DE ACEPTACIÓN 
+
+. El administrador deberá poder anular las citas médicas. 
+. El administrador deberá recibir un mensaje de error si ha dejado un campo vació 
+
+
+CASOS DE PRUEBA 
+
+Tabla 37-3 Caso de Prueba Listado de Fichas Medicas 
+
+CASO DE 
+PRUEBA 
+
+El administrador desea realizar la eliminación de una ficha 
+medica 
+
+PROPÓSITO 
+
+Probar que el administrador pueda realizar la anulación de una cita 
+médica. 
+
+PRE_REQUISITOS 
+
+Que el administrador se autentifique 
+
+PASOS 
+
+1. En el formulario se deberá elegir una cita médica para poder ser 
+anulada 
+1.1. Mensaje de confirmación de anulación. 
+
+
+
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa. 
+
+ 
+
+Prototipo de la Interfaz 
+
+ 
+
+ 
+
+Figura 21-3 Anulación en Citas médica 
+
+Fuente: Claudio Padrón, David Lasluisa 
+
+ 
+
+ 
+
+
+3.5.5 Sprint 3 
+
+En esta iteración se describirá las tareas que se realizará en la creación de las Capas de infraestructura, acceso a datos, lógica de negocios y presentación 
+para la iteración 3. Las fechas de inicio y finalización del sprint 3 son: 
+
+Fecha de Inicio: 18 de mayo del 2015 
+
+Fecha de Fin: 22 de julio de 2015 
+
+En la siguiente Tabla 38-3 muestra el desarrollo del Sprint 3 
+
+ 
+
+Tabla 38-3 Sprint 3 
+
+ID 
+
+TIPO 
+
+RANGO 
+
+TITULO 
+
+PUNTOS 
+
+ASIGNADO 
+
+ESTADO 
+
+ESTIMACIÓN 
+HORAS 
+
+18 
+
+Caso de Usuario 
+
+3 
+
+Generación del listado Citas medicas 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+19 
+
+Caso de Usuario 
+
+3 
+
+Generación del listado citas médicas por fechas 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+20 
+
+Caso de Usuario 
+
+3 
+
+Generación del listado general de kárdex 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+
+
+
+21 
+
+Caso de Usuario 
+
+3 
+
+Generación del listado detallado de kárdex por 
+MÉDICO 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+3 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+2 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+2 
+
+22 
+
+Caso de Usuario 
+
+3 
+
+Generación listado de distribución por oficina 
+
+30 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+ 
+
+Tarea 
+
+ 
+
+Pruebas Unitarias 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+23 
+
+Caso de Usuario 
+
+3 
+
+Generación listado de médicos por especialidad 
+
+30 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+24 
+
+ 
+
+Tarea 
+
+ 
+
+Generar el acceso a datos 
+
+6 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+4 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la lógica de negocios 
+
+10 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+6 
+
+ 
+
+Tarea 
+
+ 
+
+Generar la capa de presentación 
+
+14 
+
+David Lasluisa, Claudio Padrón 
+
+ACTIVO 
+
+8 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa
+
+
+Figura 22-3 Listado de Fichas Médicas 
+
+CASOS DE PRUEBA 
+
+ 
+
+NUMERO DE ITERACIÓN: 3 
+
+IDENTIFICADOR DEL USER STORIES: 18 
+
+TITULO: Generación del listado de fichas médicas 
+
+RANKING: 1 
+
+PUNTOS: 10 
+
+ESTADO: Completado 
+
+CRITERIOS DE ACEPTACIÓN 
+
+. El administrador deberá visualizar un formulario con la lista de general de historias 
+clínicas. 
+. El administrador deberá recibir un mensaje de error si ha dejado un campo vacío. 
+
+
+CASOS DE PRUEBA 
+
+Tabla 39-3 Casos del listado general de fichas Médicas 
+
+Caso De Prueba 
+
+Como administrador desea generar el listado de compras. 
+
+PROPÓSITO 
+
+Probar que el administrador pueda generar el listado general de las 
+fichas médicas realizadas por todos los médicos. 
+
+PRE_REQUISITOS 
+
+Que el administrador se autentifique 
+
+PASOS 
+
+1. En el formulario se deberá elegir para visualizar el listado 
+general de fichas médicas. 
+
+
+
+
+Elaborado por: David Lasluisa, Claudio Padrón 
+
+ 
+
+Prototipo de la Interfaz 
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+Diseño de Interfaces y Contenidos 
+
+ 
+
+La interfaz se encuentra implementada en base a las necesidades del usuario al momento de 
+registrar todas las actividades del administrador y de los doctores por su especialidad, para lo 
+cual se organizó la información en grupos que son: 
+
+
+. Ingresos de cada una de las actividades de los ingresos de usuarios pacientes y médicos 
+. Ingresos de cada una de las citas médicas asignadas a cada MÉDICO 
+. Ingresos de cada una de las actividades de las historias clínicas por cada MÉDICO 
+. Visualización de los diferentes reportes 
+
+
+A continuación, se encuentra las fechas de inicio y fin de los Sprint, así como la descripción de 
+la función de la ceremonia de cierre realizada (Ver Tabla 40-3) 
+
+El esfuerzo estimado no es otra cosa que el tiempo que se ha planificado para terminar el sprint 
+además de los responsables del mismo. 
+
+ 
+
+ 
+
+Tabla 40-3 Ceremonia de Cierre 
+
+Ceremonia de Cierre 
+
+Fecha Inicio: 
+
+18 de enero del 2015 
+
+Fecha Fin: 
+
+30 de julio de 2015 
+
+Descripción: 
+
+Desarrollo de Interfaces, Edición de Conceptos, 
+Implementación de los módulos de dependencia. 
+
+Esfuerzo estimado: 
+
+28 días 
+
+Responsable: 
+
+Ing. Nelson Rosero, David Lasluisa, Claudio Padrón 
+
+
+
+Elaborado por: Claudio Padrón, David Lasluisa 
+
+ 
+
+Interfaz de Usuario 
+
+ 
+
+
+La interfaz seleccionada para la implementación del presente sistema está implementada para el 
+administrador/usuario directo a petición del mismo. La ubicación de los botones, así como el de 
+los contenidos de cada una de las interfaces es personalizada para el usuario. 
+
+
+ 
+
+
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+Recoleccion y…
+
+
+Implemenatcio…
+
+
+Edicion de…
+
+
+Desarrollo de…
+
+
+Implementacio…
+
+
+SISMEDIC 
+
+Avance Ideal
+
+Avance real
+
+ 
+
+
+ Figura 23-3 Interfaz de Usuario 
+
+ Elaborado por: Claudio Padrón, David Lasluisa 
+
+ 
+
+Gráficas del Burn Down 
+
+ 
+
+La siguiente figura muestra la representación gráfica del avance de los Sprint, mismo que 
+corresponde a la al recolección, diseño e implementación del sistema, como se puede observar 
+la línea celeste muestra el avance ideal en tanto que la línea color naranja muestra la gráfica del 
+avance real. Como se puede observar a pesar de no cumplir exactamente con el avance ideal se 
+cumplió a tiempo con la implementación del Sprint 
+
+ 
+
+ Figura 24-3 Gráfica Burn Down 
+
+ Elaborado por: Claudio Padrón, David Lasluisa 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+CONCLUSIONES 
+
+ 
+
+. Luego de comparar las dos tecnologías HTML5 Y PRIME FACES, se concluye que para 
+desarrollar aplicaciones web de manera eficiente y con mayor interactividad con el usuario, 
+la tecnología que más se ajusta a estos parámetros de desarrollo y eficiencia es HTML5. 
+. Se analizó y comparo las tecnologías HTML5 Y PRIME FACES con los siguientes criterios 
+de evaluación: Peso del módulo expresado en Kilobytes, Líneas de código, Tiempo de carga 
+de la interfaz, Cantidad de recursos usados (porcentaje de memoria RAM, Ancho de banda, 
+porcentaje del CPU.), los cuales afirmaron que HTML5 es mucho más eficiente que PRIME 
+FACES. 
+. Al determinar cuál tecnología es más idónea se obtuvo que HTML5 es superior con 11 
+puntos a PRIME FACES lo que equivale a decir que HTML5 es un 39.3939% más eficiente 
+que PRIME FACES, permitiendo una mejor compatibilidad y velocidad de respuesta en el 
+desarrollo de la interfaz de aplicaciones web. 
+
+
+ 
+
+RECOMENDACIONES 
+
+ 
+
+. Se recomienda usar la tecnología HTML5 para el desarrollo de aplicaciones Web ya que es 
+más eficiente que PRIME FACES y es el nuevo estándar de diseño de páginas Web 
+permitiendo compatibilidad multiplataforma y con varios dispositivos a la vez, mejorando 
+su experiencia de usuario y proporcionando una alternativa en el desarrollo de sistemas 
+médicos iterativos. 
+. Se recomienda implementar de manera indirecta los atributos CSS3 y las animaciones de 
+JQuery. 
+. Realizar futuros estudios acerca de la tecnología HTML5 ya que en poco tiempo será el 
+estándar para el desarrollo de aplicaciones web. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+BIBLIOGRAFÍA 
+
+ 
+
+Gauchat, Juan Diego. 2012. El gran libro de HTML5, CSS3 y Javascript. Barcelona: 
+Marcombo. 
+
+ 
+
+Hispano, Java. 2015. java Hispano. 8 de 2. Último acceso: 13 de 3 de 2012. 
+
+ 
+
+ http://www.javahispano.org/ecuador/2012/3/13/richfaces-y-PRIME FACES -y-icefaces.html. 
+
+ 
+
+LANCKER, Luc VAN. 2014. El framework JavaScript de la Web 2.0 (2a edición). Cataluña: 
+Eni. 
+
+—. 2013. Los API JavaScript de HTML5. Barcelona: Eni . 
+
+ 
+
+lopez, Javier. 2015. www.html6.es. 7 de 3. Último acceso: 6 de 4 de 2015. 
+http://www.html6.es/t7_intro_css.html. 
+
+ 
+
+Puig, Jordi Collell. 2014. CSS3 y Javascript avanzado. Bogota: OpenLibra . 
+
+ 
+
+Torres, lic. Manuel. 2014. «Diseño Web con HTML5 y CSS3.» En Diseño Web con HTML5 y 
+CSS3, de lic. Manuel Torres, 356. Lima: Macro. 
+
+ 
+
+usabilidad.tv. © 2000 - 2015 . http://www.usabilidad.tv/. 
+http://www.usabilidad.tv/usabilidad_Web/peso_de_pagina.asp. 
+
+ 
+
+Web, libros. 2014. libros Web CSS3. libros Web. 2 de 07. Último acceso: 15 de 2 de 2014. 
+https://librosWeb.es/libro/css/capitulo_1/breve_historia_de_css.html. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REFERENCIAS 
+
+ 
+
+Gauchat, Juan Diego. 2012. El gran libro de HTML5, CSS3 y Javascript. Barcelona: 
+Marcombo. 
+
+ 
+
+Hispano, Java. 2015. java Hispano. 8 de 2. Último acceso: 13 de 3 de 2012. 
+
+ 
+
+http://www.javahispano.org/ecuador/2012/3/13/richfaces-y-PRIME FACES -y-icefaces.html. 
+
+ 
+
+LANCKER, Luc VAN. 2014. El framework JavaScript de la Web 2.0 (2a edición). Cataluña: 
+Eni. 
+
+—. 2013. Los API JavaScript de HTML5. Barcelona: Eni . 
+
+ 
+
+lopez, Javier. 2015. www.html6.es. 7 de 3. Último acceso: 6 de 4 de 2015. 
+http://www.html6.es/t7_intro_css.html. 
+
+ 
+
+Puig, Jordi Collell. 2014. CSS3 y Javascript avanzado. Bogota: OpenLibra . 
+
+ 
+
+
+Torres, lic. Manuel. 2014. «Diseño Web con HTML5 y CSS3.» En Diseño Web con HTML5 y 
+CSS3, de lic. Manuel Torres, 356. Lima: Macro. 
+
+ 
+
+usabilidad.tv. © 2000 - 2015 . http://www.usabilidad.tv/. 
+http://www.usabilidad.tv/usabilidad_Web/peso_de_pagina.asp. 
+
+ 
+
+Web, libros. 2014. libros Web CSS3. libros Web. 2 de 07. Último acceso: 15 de 2 de 2014. 
+https://librosWeb.es/libro/css/capitulo_1/breve_historia_de_css.html. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+TRABAJOS CITADOS 
+
+ 
+
+Gauchat, Juan Diego. 2012. El gran libro de HTML5, CSS3 y Javascript. Barcelona: 
+Marcombo. 
+
+ 
+
+Hispano, Java. 2015. java Hispano. 8 de 2. Último acceso: 13 de 3 de 2012. 
+
+ 
+
+ http://www.javahispano.org/ecuador/2012/3/13/richfaces-y-PRIME FACES -y-icefaces.html. 
+
+ 
+
+LANCKER, Luc VAN. 2014. El framework JavaScript de la Web 2.0 (2a edición). Cataluña: 
+Eni. 
+
+—. 2013. Los API JavaScript de HTML5. Barcelona: Eni . 
+
+ 
+
+lopez, Javier. 2015. www.html6.es. 7 de 3. Último acceso: 6 de 4 de 2015. 
+http://www.html6.es/t7_intro_css.html. 
+
+ 
+
+Puig, Jordi Collell. 2014. CSS3 y Javascript avanzado. Bogota: OpenLibra . 
+
+ 
+
+Torres, lic. Manuel. 2014. «Diseño Web con HTML5 y CSS3.» En Diseño Web con HTML5 y 
+CSS3, de lic. Manuel Torres, 356. Lima: Macro. 
+
+ 
+
+usabilidad.tv. © 2000 - 2015 . http://www.usabilidad.tv/. 
+http://www.usabilidad.tv/usabilidad_Web/peso_de_pagina.asp. 
+
+ 
+
+Web, libros. 2014. libros Web CSS3. libros Web. 2 de 07. Último acceso: 15 de 2 de 2014. 
+
+ https://librosWeb.es/libro/css/capitulo_1/breve_historia_de_css.html. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ANEXOS 
+
+ 
+
+Anexo A 
+
+ 
+
+ 
+
+MANUAL DE USUARIO 
+
+1. Pantalla principal de la pagina web informativa de la unidad de asistencia social del 
+gobierno autónomo descentralizado del Cantón Quero. 
+
+
+ 
+
+http://www.uasgadquero.com.ec/ 
+
+ 
+
+ 
+
+ 
+
+La página web contiene los siguientes módulos. - 
+
+2. ACERCA DE 
+
+
+El cual representanta una pequeña introducción de los que es la unidad de asistencia de 
+acción social del gobierno autónomo descentralizado del Cantón Quero, además de su 
+misión y visión. 
+
+
+ 
+
+ 
+
+ 
+
+3. El módulo de responsables nos permite visualizar las personas que están encargadas del 
+municipio, así como también de los administradores de la página y aplicación web. 
+
+
+Este módulo nos permite comunicarnos directamente con los encargados tanto del 
+municipio como de la unidad de asistencia social. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4. El módulo de servicios nos indica todos los beneficios y actividades que es 
+proporcionada por la unidad de acción social. 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+5. El módulo de recomendaciones permite informar a la sociedad sobre la utilización de 
+cómo se realizó el sistema web para mejorar la atención médica y del asilo a los 
+usuarios de que asisten a la unidad de asistencia social. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+6. El módulo de contáctenos permite comunicarnos solo con la unidad de acción social el 
+cual servirá para reservar un turno médico o contestar las dudas sobre la unidad de 
+acción social 
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+APLICACIÓN WEB (SISMEDIC) DESARROLLADA PARA LA UNIDAD DE 
+ASISTENCIA SOCIAL DEL CANTÓN QUERO 
+
+ 
+
+1. En el ícono de sistema web se podrá acceder al sistema médico que ha sido 
+desarrollado para la automatización de las principales tareas dentro de la unidad de la 
+asistencia social. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2. Al dar clic sobre el ícono enviará directamente a una página de autentificación donde 
+solo el personal administrativo y los médicos tendrán acceso.
+
+
+
+3. Los cuales deben ingresar sus credenciales (usuario y password) para poder ingresar, 
+caso contrario no se le permitirá el ingreso además el sistema será bloqueado al tener 
+como máximo 5 intentos 
+
+
+ 
+
+ 
+
+ 
+
+4. Al ingresar al sistema se presentarán diferentes perfiles, así como privilegios 
+dependiendo, del usuario que puede ser médico o administrador. 
+
+
+ 
+
+4.1. Interfaz del administrador 
+
+
+
+
+Esta interfaz permitirá realizar todas las diferentes consultas, ingresos y creación de 
+nuevos usuarios médicos y administradores. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3.2 Ingreso de usuarios 
+
+La siguiente pantalla indica cómo crear un nuevo usuario teniendo en cuenta que los asteriscos * 
+rojos son campos obligatorios es decir que no se guardará ningún usuario sino se llena 
+correctamente, además permitirá escoger el tipo de rol que va a tener el usuario ya sea 
+administrador o médico. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+3.3 Ingreso de pacientes 
+
+ 
+
+ 
+
+ 
+
+Esta pantalla indica todos los datos necesarios para crear una ficha médica de un paciente, así 
+como también sus antecedentes como muestra la siguiente figura. 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+3.4 El siguiente módulo permite ingresar un nuevo MÉDICO el cual debe llenar los siguientes 
+datos, como primer dato perfil de usuario el cual contiene los siguientes campos 
+
+ 
+
+ 
+
+ 
+
+Datos personales de cada médico los cuales deben ser llenados obligatoriamente como lo indica 
+la siguiente figura 
+
+ 
+
+ 
+
+
+ 
+
+Información adicional de cada médico el cual permite tener una información más amplia con 
+sus respectivas especialidades y las observaciones para en caso de emergencia poder 
+contactarlo. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3.5 Ingreso de empleados esta opción permite ingresar todos los empleados que existen en la 
+institución y que no tienen acceso al sistema para tener un reporte de todas las personas q 
+laboran en la unidad de asistencia social. 
+
+ 
+
+ 
+
+ 
+
+
+3.6 Ingreso de una cita médica este formulario permite crear una cita para cada paciente 
+asignada a un médico por especialidad además el sistema controla que las fechas solo puedan 
+asignarse para citas futuras. 
+
+ 
+
+ 
+
+ 
+
+3.7 Buscar por Médicos 
+
+El siguiente formulario permitirá buscar todos los médicos y también permite filtrar una 
+búsqueda dado su especialidad. Al encontrar al médico requerido podemos mostrar editarlo y 
+eliminarlo solo con los permisos de administrador como se indica en la siguiente figura 
+
+ 
+
+MOSTRAR 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+EDITAR 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ELIMINAR 
+
+ 
+
+ 
+
+ 
+
+3.9 Buscar pacientes permite visualizar editar y eliminar los pacientes que deseemos mostrar. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
